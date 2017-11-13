@@ -16,5 +16,6 @@
         <module>boolean-search</module>
         <module>http-api-using-request-handlers-and-processors</module>
         <module>http-api-using-searcher</module>
+        <module>duokan-example</module>
     </modules>
 </project>

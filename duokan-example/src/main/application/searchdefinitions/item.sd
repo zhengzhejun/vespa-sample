@@ -1,0 +1,20 @@
+
+search item {
+
+    document item {
+
+        field item_id type string {
+            indexing: summary | index
+        }
+
+        field author type string {
+            indexing: summary | index
+        }
+
+        field title type string {
+            indexing: summary | index
+        }
+
+    }
+
+}

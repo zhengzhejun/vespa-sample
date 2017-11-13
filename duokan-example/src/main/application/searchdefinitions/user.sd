@@ -1,0 +1,20 @@
+
+search user {
+
+    document user {
+
+        field user_id type string {
+            indexing: summary | index
+        }
+
+        field age type int {
+            indexing: summary | index
+        }
+
+        field sex type int {
+            indexing: summary | index
+        }
+
+    }
+
+}

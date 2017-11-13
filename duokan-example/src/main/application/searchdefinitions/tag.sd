@@ -1,0 +1,16 @@
+
+search tag {
+
+    document tag {
+
+        field tag_id type string {
+            indexing: summary | index
+        }
+
+        field fiction_list type string {
+            indexing: summary | index
+        }
+
+    }
+
+}
