@@ -7,11 +7,11 @@ search user {
             indexing: summary | index
         }
 
-        field age type int {
+        field age type string {
             indexing: summary | index
         }
 
-        field sex type int {
+        field sex type string {
             indexing: summary | index
         }
 
