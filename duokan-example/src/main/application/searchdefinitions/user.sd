@@ -8,11 +8,11 @@ search user {
         }
 
         field age type string {
-            indexing: summary | index
+            indexing: index
         }
 
         field sex type string {
-            indexing: summary | index
+            indexing: index
         }
 
     }
