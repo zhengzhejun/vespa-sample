@@ -6,7 +6,11 @@
   </admin>
   <container id="default" version="1.0">
     <document-api />
-    <search />
+    <search>
+      <chain id="item" inherits="vespa">
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch" />
+      </chain>
+    </search>
     <nodes>
       <node hostalias="node1"/>
     </nodes>
