@@ -100,7 +100,7 @@ public class TransformData {
       fields.put("tag_id", tagId);
 
       JSONArray fictionArray = new JSONArray();
-      Iterator iter = fictionListJSON.keys();
+      Iterator<?> iter = fictionListJSON.keys();
       while(iter.hasNext()) {
         String key = iter.next().toString();
         fictionArray.put(key);
