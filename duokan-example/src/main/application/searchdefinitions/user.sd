@@ -15,6 +15,16 @@ search user {
             indexing: index
         }
 
+        field user_vector type tensor(x[3]) {
+            indexing: summary | attribute
+            attribute: tensor(x[3])
+        }
+
+        field has_user_vector type int {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+
     }
 
 }

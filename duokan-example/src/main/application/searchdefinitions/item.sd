@@ -15,6 +15,16 @@ search item {
             indexing: summary | index
         }
 
+        field item_vector type tensor(x[3]) {
+            indexing: summary | attribute
+            attribute: tensor(x[3])
+        }
+
+        field has_item_vector type int {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+
     }
 
 }

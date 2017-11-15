@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.util.Iterator;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class TransformData {
@@ -27,6 +29,21 @@ public class TransformData {
       fields.put("user_id", userId);
       fields.put("age", age);
       fields.put("sex", sex);
+
+      //tensor field
+      JSONObject tensorJSON = new JSONObject();
+      JSONArray cellsJSON = new JSONArray();
+      for(int i = 0; i < 3; i++){
+        JSONObject cellJSON = new JSONObject();
+        JSONObject addressJSON = new JSONObject();
+        addressJSON.put("x", "" + i);
+        cellJSON.put("address", addressJSON);
+        cellJSON.put("value", nextInt());
+        cellsJSON.put(cellJSON);
+      }
+      tensorJSON.put("cells", cellsJSON);
+      fields.put("user_vector", tensorJSON);
+
       outputJSON.put("fields", fields);
       writer.println(outputJSON.toString());
     }
@@ -48,6 +65,21 @@ public class TransformData {
       fields.put("item_id", itemId);
       fields.put("author", author);
       fields.put("title", title);
+
+      //tensor field
+      JSONObject tensorJSON = new JSONObject();
+      JSONArray cellsJSON = new JSONArray();
+      for(int i = 0; i < 3; i++){
+        JSONObject cellJSON = new JSONObject();
+        JSONObject addressJSON = new JSONObject();
+        addressJSON.put("x", "" + i);
+        cellJSON.put("address", addressJSON);
+        cellJSON.put("value", nextInt());
+        cellsJSON.put(cellJSON);
+      }
+      tensorJSON.put("cells", cellsJSON);
+      fields.put("item_vector", tensorJSON);
+
       outputJSON.put("fields", fields);
       writer.println(outputJSON.toString());
     }
@@ -60,19 +92,30 @@ public class TransformData {
     while((str = reader.readLine()) != null) {
       JSONObject json = new JSONObject(str);
       String tagId = json.optString("id", "");
-      String fictionList = json.optString("fictionList", "");
+      JSONObject fictionListJSON = json.optJSONObject("fiction_list");
 
       JSONObject outputJSON = new JSONObject();
       outputJSON.put("put", idPrefix + ":tag::" + tagId);
       JSONObject fields = new JSONObject();
       fields.put("tag_id", tagId);
-      fields.put("fiction_list", fictionList);
+
+      JSONArray fictionArray = new JSONArray();
+      Iterator<String> iter = fictionListJSON.keys();
+      while(iter.hasNext()) {
+        String key = iter.next();
+        fictionArray.put(key);
+      }
+      fields.put("fiction_list", fictionArray);
       outputJSON.put("fields", fields);
       writer.println(outputJSON.toString());
     }
     writer.flush();
     writer.close();
     reader.close();
+  }
+
+  public static int nextInt() {
+    return (int)(Math.random() * 10);
   }
 
 }

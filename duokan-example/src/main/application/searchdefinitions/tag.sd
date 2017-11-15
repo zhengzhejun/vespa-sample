@@ -7,8 +7,8 @@ search tag {
             indexing: summary | index
         }
 
-        field fiction_list type string {
-            indexing: summary | index
+        field fiction_list type array<string> {
+            indexing: summary | attribute
         }
 
     }
