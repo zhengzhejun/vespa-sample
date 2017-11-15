@@ -10,7 +10,8 @@ public class ItemTensorSearch extends Searcher{
   @Override
   public Result search(Query query, Execution execution) {
 
-    return execution.search(query);
+//    return execution.search(query);
+    return null;
 
   }
 
