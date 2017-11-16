@@ -20,10 +20,9 @@ public class DemoHandler extends LoggingRequestHandler {
 
   @Override
   public HttpResponse handle(HttpRequest request) {
-    String searchChain = request.getProperty("chain");
+    String sex = request.getProperty("sex");
     HttpRequest searchRequest = new HttpRequest.Builder(request)
-        .put("yql", "select * from sources * where user_id contains \"867758960\";")
-        .put("searchChain", searchChain).createDirectRequest();
+        .put("yql", "select * from sources * where sex contains \"" + sex +"\";").createDirectRequest();
     return searchHandler.handle(searchRequest);
   }
 
