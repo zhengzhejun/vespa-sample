@@ -2,6 +2,7 @@ package com.yahoo.vespa.searcher;
 
 import com.yahoo.prelude.query.AndItem;
 import com.yahoo.prelude.query.CompositeItem;
+import com.yahoo.prelude.query.Item;
 import com.yahoo.prelude.query.WordItem;
 import com.yahoo.search.Query;
 import com.yahoo.search.Result;
@@ -23,14 +24,28 @@ public class DefaultSearch extends Searcher {
     logger.info("user id : {}", userId);
     if(userId.length() > 0) {
       QueryTree queryTree = query.getModel().getQueryTree();
-      CompositeItem compositeItem = new AndItem();
-      compositeItem.addItem(queryTree.getRoot());
-      compositeItem.addItem(new WordItem(userId, "user_id"));
-      queryTree.setRoot(compositeItem);
+      addAndItem(queryTree, userId);
     }
 
     return execution.search(query);
 //    return null;
+  }
+
+  private void addAndItem(QueryTree q, String term) {
+    Item root = q.getRoot();
+    logger.info("QueryTree root type is type:{}", root.getItemType());
+    CompositeItem compositeRoot;
+    if (root instanceof AndItem) {
+      compositeRoot = (CompositeItem) root;
+      logger.info("compositeRoot count:{}", compositeRoot.getItemCount());
+    } else {
+      compositeRoot = new AndItem();
+      compositeRoot.addItem(root);
+      q.setRoot(compositeRoot);
+    }
+    WordItem wordItem = new WordItem(term);
+    logger.info("wordItem {}", wordItem.getItemType());
+    compositeRoot.addItem(new WordItem(term));
   }
 
 }
