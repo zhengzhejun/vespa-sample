@@ -10,6 +10,9 @@
       <chain id="item" inherits="vespa">
         <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch" />
       </chain>
+      <chain id="default" inherits="vespa" >
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DefaultSearch" />
+      </chain>
     </search>
     <nodes>
       <node hostalias="node1"/>

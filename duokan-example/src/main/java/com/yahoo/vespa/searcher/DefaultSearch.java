@@ -5,14 +5,13 @@ import com.yahoo.search.Result;
 import com.yahoo.search.Searcher;
 import com.yahoo.search.searchchain.Execution;
 
-public class ItemTensorSearch extends Searcher{
+public class DefaultSearch extends Searcher {
 
   @Override
   public Result search(Query query, Execution execution) {
 
-    return execution.search(query);
-//    return null;
-
+//    return execution.search(query);
+      return null;
   }
 
 }
