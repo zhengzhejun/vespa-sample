@@ -17,11 +17,11 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.yahoo.example</groupId>
-            <artifactId>basic-search-java</artifactId>
-            <version>1.0.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.yahoo.example</groupId>-->
+            <!--<artifactId>basic-search-java</artifactId>-->
+            <!--<version>1.0.1</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

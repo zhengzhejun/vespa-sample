@@ -9,7 +9,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>duokanexample</artifactId>
-  <packaging>jar</packaging>
+  <version>1.0.1</version>
+  <packaging>container-plugin</packaging>
 
   <name>duokanexample</name>
   <url>http://maven.apache.org</url>
