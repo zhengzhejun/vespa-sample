@@ -15,7 +15,7 @@
       </chain>
     </search>
     <handler bundle="duokanexample" id="com.yahoo.vespa.handler.DemoHandler" >
-      <binding>http://*:8080/demo</binding>
+      <binding>http://*:8080/demo/</binding>
     </handler>
     <nodes>
       <node hostalias="node1"/>
