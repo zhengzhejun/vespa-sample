@@ -33,7 +33,9 @@ public class DefaultSearch extends Searcher {
 
   private void addAndItem(QueryTree q, String term) {
     Item root = q.getRoot();
-    logger.info("QueryTree root type is type:{}", root.getItemType());
+    if(root != null) {
+      logger.info("QueryTree root type is type:{}", root.getItemType());
+    }
     CompositeItem compositeRoot;
     if (root instanceof AndItem) {
       compositeRoot = (CompositeItem) root;
