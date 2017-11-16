@@ -8,13 +8,19 @@ import com.yahoo.search.Result;
 import com.yahoo.search.Searcher;
 import com.yahoo.search.query.QueryTree;
 import com.yahoo.search.searchchain.Execution;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class DefaultSearch extends Searcher {
 
+  private static Logger logger = LoggerFactory.getLogger(DefaultSearch.class);
+
   @Override
   public Result search(Query query, Execution execution) {
+    logger.info("start search");
     String userId = query.properties().getString("userId", "");
+    logger.info("user id : {}", userId);
     if(userId.length() > 0) {
       QueryTree queryTree = query.getModel().getQueryTree();
       CompositeItem compositeItem = new AndItem();
