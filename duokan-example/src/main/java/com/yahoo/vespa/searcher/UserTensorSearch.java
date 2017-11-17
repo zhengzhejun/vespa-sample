@@ -44,7 +44,7 @@ public class UserTensorSearch extends Searcher {
     query.getModel().getQueryTree().setRoot(new WordItem(queryString, indexName));
     query.setHits(1);
 
-    SearchChain defaultSearchChain = execution.searchChainRegistry().getComponent("default");
+    SearchChain defaultSearchChain = execution.searchChainRegistry().getComponent("vespa");
     Result result = new Execution(defaultSearchChain, execution.context()).search(query);
     execution.fill(result);
     logger.info("result is {}", result);
