@@ -27,4 +27,13 @@ search item {
 
     }
 
+        rank-profile tensor {
+
+            first-phase {
+                expression: sum(query(user_vector) * attribute(item_vector))
+            }
+
+        }
+
+
 }

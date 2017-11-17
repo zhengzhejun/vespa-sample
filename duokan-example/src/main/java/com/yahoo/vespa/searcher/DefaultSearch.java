@@ -19,35 +19,8 @@ public class DefaultSearch extends Searcher {
 
   @Override
   public Result search(Query query, Execution execution) {
-    logger.info("start search");
-    String userId = query.properties().getString("userId", "");
-    logger.info("user id : {}", userId);
-    if(userId.length() > 0) {
-      QueryTree queryTree = query.getModel().getQueryTree();
-      addAndItem(queryTree, userId);
-    }
-
+    logger.info("start DefaultSearch, query:{}", query);
     return execution.search(query);
-//    return null;
-  }
-
-  private void addAndItem(QueryTree q, String term) {
-    Item root = q.getRoot();
-    if(root != null) {
-      logger.info("QueryTree root type is type:{}", root.getItemType());
-    }
-    CompositeItem compositeRoot;
-    if (root instanceof AndItem) {
-      compositeRoot = (CompositeItem) root;
-      logger.info("compositeRoot count:{}", compositeRoot.getItemCount());
-    } else {
-      compositeRoot = new AndItem();
-      compositeRoot.addItem(root);
-      q.setRoot(compositeRoot);
-    }
-    WordItem wordItem = new WordItem(term);
-    logger.info("wordItem {}", wordItem.getItemType());
-    compositeRoot.addItem(new WordItem(term));
   }
 
 }
