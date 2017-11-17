@@ -55,7 +55,7 @@ public class UserTensorSearch extends Searcher {
   private void addUserProfileTensorToQuery(Query query, Hit userProfile) {
     Object userItemCf = userProfile.getField("user_vector");
     logger.info("userProfile is {}", userProfile);
-    logger.info("UserItemCf is {}", userItemCf);
+    logger.info("UserItemCf is {}", ((Inspectable)userItemCf).inspect());
     if (userItemCf != null && userItemCf instanceof Inspectable) {
       Tensor.Builder tensorBuilder = Tensor.Builder
           .of(new TensorType.Builder().indexed("x", 10).build());
