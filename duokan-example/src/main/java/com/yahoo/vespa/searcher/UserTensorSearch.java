@@ -14,8 +14,12 @@ import com.yahoo.tensor.Tensor;
 import com.yahoo.tensor.TensorType;
 import java.util.Iterator;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class UserTensorSearch extends Searcher{
+
+  private static final Logger logger = LoggerFactory.getLogger(UserTensorSearch.class);
 
   @Override
   public Result search(Query query, Execution execution) {
@@ -57,10 +61,12 @@ public class UserTensorSearch extends Searcher{
         for (Map.Entry<String, Inspector> entry : address.fields()) {
           String dim = entry.getKey();
           String label = entry.getValue().asString();
+          logger.info("dim:{}, label:{}", dim, label);
           cellBuilder.label(dim, label);
         }
 
         Inspector value = cell.field("value");
+        logger.info("value:{}", value);
         cellBuilder.value(value.asDouble());
       }
       query.properties().set(new CompoundName("user_vector"), tensorBuilder.build());
