@@ -18,7 +18,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class UserTensorSearch extends Searcher{
+public class UserTensorSearch extends Searcher {
 
   private static final Logger logger = LoggerFactory.getLogger(UserTensorSearch.class);
 
@@ -27,7 +27,7 @@ public class UserTensorSearch extends Searcher{
 
     String userId = query.properties().getString("user_id", "");
 //    String tagId = query.properties().getString("tag_id", "");
-    if(userId.length() > 0) {
+    if (userId.length() > 0) {
       Hit userHit = callDefaultSearch("user", "user_id", userId, execution);
 //      Hit tagHit = callDefaultSearch("tag", "tag_id", tagId, execution);
       addUserProfileTensorToQuery(query, userHit);
@@ -37,7 +37,8 @@ public class UserTensorSearch extends Searcher{
 
   }
 
-  private Hit callDefaultSearch(String sdName, String indexName, String queryString, Execution execution) {
+  private Hit callDefaultSearch(String sdName, String indexName, String queryString,
+      Execution execution) {
     Query query = new Query();
     query.getModel().setRestrict(sdName);
     query.getModel().getQueryTree().setRoot(new WordItem(queryString, indexName));
@@ -55,8 +56,10 @@ public class UserTensorSearch extends Searcher{
     Object userItemCf = userProfile.getField("user_vector");
     logger.info("UserItemCf is {}", userItemCf);
     if (userItemCf != null && userItemCf instanceof Inspectable) {
-      Tensor.Builder tensorBuilder = Tensor.Builder.of(new TensorType.Builder().indexed("x", 10).build());
-      Inspector cells = ((Inspectable)userItemCf).inspect().field("cells");
+      Tensor.Builder tensorBuilder = Tensor.Builder
+          .of(new TensorType.Builder().indexed("x", 10).build());
+      Inspector cells = ((Inspectable) userItemCf).inspect().field("cells");
+      logger.info("cells is {}", cells);
       for (Inspector cell : cells.entries()) {
         Tensor.Builder.CellBuilder cellBuilder = tensorBuilder.cell();
 
