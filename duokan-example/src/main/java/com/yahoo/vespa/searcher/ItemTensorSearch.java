@@ -1,5 +1,7 @@
 package com.yahoo.vespa.searcher;
 
+import com.yahoo.prelude.query.AndItem;
+import com.yahoo.prelude.query.WordItem;
 import com.yahoo.processing.request.CompoundName;
 import com.yahoo.search.Query;
 import com.yahoo.search.Result;
@@ -21,6 +23,8 @@ public class ItemTensorSearch extends Searcher{
     Tensor userVector = (Tensor)query.properties().get("user_vector");
 
     logger.info("userVector is {}", Tensor.toStandardString(userVector));
+
+    query.getModel().getQueryTree().setRoot(new WordItem("317124", "item_id"));
 
     query.getModel().setRestrict("item");
 
