@@ -11,6 +11,7 @@ import com.yahoo.search.result.Hit;
 import com.yahoo.search.result.HitGroup;
 import com.yahoo.search.searchchain.Execution;
 import com.yahoo.search.searchchain.SearchChain;
+import com.yahoo.tensor.MappedTensor;
 import com.yahoo.tensor.Tensor;
 import com.yahoo.tensor.TensorType;
 import java.util.Iterator;
@@ -55,29 +56,31 @@ public class UserTensorSearch extends Searcher {
   private void addUserProfileTensorToQuery(Query query, Hit userProfile) {
     Object userItemCf = userProfile.getField("user_vector");
     logger.info("userProfile is {}", userProfile);
-    logger.info("UserItemCf is {}", ((Inspectable)userItemCf).inspect());
-    if (userItemCf != null && userItemCf instanceof Inspectable) {
-      Tensor.Builder tensorBuilder = Tensor.Builder
-          .of(new TensorType.Builder().indexed("x", 10).build());
-      Inspector cells = ((Inspectable) userItemCf).inspect().field("cells");
-      logger.info("cells is {}", cells);
-      for (Inspector cell : cells.entries()) {
-        Tensor.Builder.CellBuilder cellBuilder = tensorBuilder.cell();
-
-        Inspector address = cell.field("address");
-        for (Map.Entry<String, Inspector> entry : address.fields()) {
-          String dim = entry.getKey();
-          String label = entry.getValue().asString();
-          logger.info("dim:{}, label:{}", dim, label);
-          cellBuilder.label(dim, label);
-        }
-
-        Inspector value = cell.field("value");
-        logger.info("value:{}", value);
-        cellBuilder.value(value.asDouble());
-      }
-      query.properties().set(new CompoundName("user_vector"), tensorBuilder.build());
-    }
+//    logger.info("UserItemCf is {}", ((Inspectable)userItemCf).inspect());
+    logger.info("UserItemCf is {}", ((MappedTensor)userItemCf).toString());
+//    if (userItemCf != null && userItemCf instanceof Inspectable) {
+//      Tensor.Builder tensorBuilder = Tensor.Builder
+//          .of(new TensorType.Builder().indexed("x", 10).build());
+//      Inspector cells = ((Inspectable) userItemCf).inspect().field("cells");
+//      logger.info("cells is {}", cells);
+//      for (Inspector cell : cells.entries()) {
+//        Tensor.Builder.CellBuilder cellBuilder = tensorBuilder.cell();
+//
+//        Inspector address = cell.field("address");
+//        for (Map.Entry<String, Inspector> entry : address.fields()) {
+//          String dim = entry.getKey();
+//          String label = entry.getValue().asString();
+//          logger.info("dim:{}, label:{}", dim, label);
+//          cellBuilder.label(dim, label);
+//        }
+//
+//        Inspector value = cell.field("value");
+//        logger.info("value:{}", value);
+//        cellBuilder.value(value.asDouble());
+//      }
+//      query.properties().set(new CompoundName("user_vector"), tensorBuilder.build());
+//    }
+    query.properties().set(new CompoundName("user_vector"), (MappedTensor)userItemCf);
   }
 
 
