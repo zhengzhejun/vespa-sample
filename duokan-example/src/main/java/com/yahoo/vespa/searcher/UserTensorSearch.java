@@ -8,6 +8,7 @@ import com.yahoo.search.Query;
 import com.yahoo.search.Result;
 import com.yahoo.search.Searcher;
 import com.yahoo.search.result.Hit;
+import com.yahoo.search.result.HitGroup;
 import com.yahoo.search.searchchain.Execution;
 import com.yahoo.search.searchchain.SearchChain;
 import com.yahoo.tensor.Tensor;
@@ -38,19 +39,21 @@ public class UserTensorSearch extends Searcher{
 
   private Hit callDefaultSearch(String sdName, String indexName, String queryString, Execution execution) {
     Query query = new Query();
-    query.getModel().setRestrict("user");
-    query.getModel().getQueryTree().setRoot(new WordItem(queryString, "user_id"));
+    query.getModel().setRestrict(sdName);
+    query.getModel().getQueryTree().setRoot(new WordItem(queryString, indexName));
     query.setHits(1);
 
     SearchChain defaultSearchChain = execution.searchChainRegistry().getComponent("default");
     Result result = new Execution(defaultSearchChain, execution.context()).search(query);
     execution.fill(result);
+    logger.info("result is {}", result);
     Iterator<Hit> hiterator = result.hits().deepIterator();
     return hiterator.hasNext() ? hiterator.next() : null;
   }
 
   private void addUserProfileTensorToQuery(Query query, Hit userProfile) {
     Object userItemCf = userProfile.getField("user_vector");
+    logger.info("UserItemCf is {}", userItemCf);
     if (userItemCf != null && userItemCf instanceof Inspectable) {
       Tensor.Builder tensorBuilder = Tensor.Builder.of(new TensorType.Builder().indexed("x", 10).build());
       Inspector cells = ((Inspectable)userItemCf).inspect().field("cells");
