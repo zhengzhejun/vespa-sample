@@ -6,6 +6,7 @@
     <document-api />
     <search />
     <nodes>
+      <node hostalias="node0" />
       <node hostalias="node1" />
     </nodes>
   </container>
@@ -16,7 +17,8 @@
       <document type="music" mode="index" />
     </documents>
     <nodes>
-      <node hostalias="node1" distribution-key="0" />
+      <node hostalias="node0" distribution-key="0" />
+      <node hostalias="node1" distribution-key="1" />
     </nodes>
   </content>
 
