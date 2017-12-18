@@ -6,6 +6,7 @@ import com.yahoo.processing.request.CompoundName;
 import com.yahoo.search.Query;
 import com.yahoo.search.Result;
 import com.yahoo.search.Searcher;
+import com.yahoo.search.query.ranking.RankFeatures;
 import com.yahoo.search.searchchain.Execution;
 import com.yahoo.tensor.Tensor;
 import org.slf4j.Logger;
@@ -22,6 +23,8 @@ public class ItemTensorSearch extends Searcher{
 
     Tensor userVector = (Tensor)query.properties().get("user_vector");
 
+    String sex = (String)query.properties().get("user_sex");
+
     logger.info("userVector is {}", Tensor.toStandardString(userVector));
 
     query.getModel().getQueryTree().setRoot(new WordItem("317124", "item_id"));
@@ -31,6 +34,8 @@ public class ItemTensorSearch extends Searcher{
     query.properties().set(new CompoundName("ranking"), "tensor");
 
     query.getRanking().getFeatures().put("query(user_vector)", userVector);
+
+    query.getRanking().getFeatures().put("query(user_tag)", "RS" + sex);
 
     return execution.search(query);
   }

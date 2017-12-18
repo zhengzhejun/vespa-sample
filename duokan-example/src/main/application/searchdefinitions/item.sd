@@ -7,30 +7,70 @@ search item {
             indexing: summary | index
         }
 
-        field author type string {
-            indexing: summary | index
+        field read_sex type array<double> {
+            indexing: attribute
         }
 
-        field title type string {
-            indexing: summary | index
+        field trans_sex type array<double> {
+            indexing: attribute
         }
 
-        field item_vector type tensor(x[3]) {
-            indexing: summary | attribute
-            attribute: tensor(x[3])
+        field read_age type array<double> {
+            indexing: attribute
         }
 
-        field has_item_vector type int {
-            indexing: summary | attribute
-            attribute: fast-search
+        field trans_age type array<double> {
+            indexing: attribute
         }
 
+        field read_location type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field trans_location type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field self_feature type array<double> {
+            indexing: attribute
+        }
+
+        field read_category_avg_score type double {
+            indexing: attribute
+        }
+
+        field trans_category_avg_score type double {
+            indexing: attribute
+        }
+
+        field author_score type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field novel_score type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field read_category_score tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field trans_category_score tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
     }
 
         rank-profile tensor {
 
             first-phase {
                 expression: sum(query(user_vector) * attribute(item_vector))
+                attribute(calc_tag, query(user_tag))
             }
 
         }

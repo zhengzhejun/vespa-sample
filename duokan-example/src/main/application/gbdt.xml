@@ -1,0 +1,46 @@
+<xml>
+  <DecisionTree>
+    <Forest>
+      <Tree>
+        <node feature="a" value="1.0">
+          <response value="0.7" nSamples="100">
+
+          </response>
+          <response value="0.3" nSample="50">
+
+          </response>
+        </node>
+      </Tree>
+      <Tree>
+        <node feature="b" value="1.0,2.0">
+          <response value="0.4">
+
+          </response>
+          <response value="0.5">
+
+          </response>
+        </node>
+      </Tree>
+      <Tree>
+        <node feature="c" value="3.0">
+          <node feature="d" value="3.0">
+            <response value="0.4">
+
+            </response>
+            <response value="0.3">
+
+            </response>
+          </node>
+          <node feature="a" value="1.0">
+            <response value="0.3">
+
+            </response>
+            <response value="0.2">
+
+            </response>
+          </node>
+        </node>
+      </Tree>
+    </Forest>
+  </DecisionTree>
+</xml>

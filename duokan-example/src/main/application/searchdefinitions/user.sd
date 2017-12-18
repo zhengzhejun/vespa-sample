@@ -7,22 +7,37 @@ search user {
             indexing: summary | index
         }
 
-        field age type string {
-            indexing: index
+        field age type int {
+            indexing: attribute
         }
 
-        field sex type string {
-            indexing: index
+        field sex type int {
+            indexing: attribute
         }
 
-        field user_vector type tensor(x[3]) {
-            indexing: summary | attribute
-            attribute: tensor(x[3])
+        field location type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
         }
 
-        field has_user_vector type int {
-            indexing: summary | attribute
-            attribute: fast-search
+        field author_score type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field novel_score type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field user_category_score tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field user_video_category_score tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
         }
 
     }

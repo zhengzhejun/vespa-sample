@@ -90,6 +90,7 @@ search blog_post {
         first-phase {
             expression: sum(query(user_item_cf) * attribute(user_item_cf))
         }
+        attribute(calc_tags, query(RS))
 
     }
 
