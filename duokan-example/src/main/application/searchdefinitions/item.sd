@@ -7,6 +7,10 @@ search item {
             indexing: summary | index
         }
 
+        field tag_list type array<string> {
+            indexing: summary | index
+        }
+
         field read_sex type array<double> {
             indexing: attribute
         }
