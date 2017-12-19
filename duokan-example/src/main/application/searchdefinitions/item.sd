@@ -49,12 +49,17 @@ search item {
             indexing: attribute
         }
 
-        field author_score type tensor(x{}) {
+        field author_name type tensor(x{}) {
             indexing: attribute
             attribute: tensor(x{})
         }
 
-        field novel_score type tensor(x{}) {
+        field similar_author_score type tensor(x{}) {
+            indexing: attribute
+            attribute: tensor(x{})
+        }
+
+        field similar_novel_score type tensor(x{}) {
             indexing: attribute
             attribute: tensor(x{})
         }
