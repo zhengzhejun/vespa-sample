@@ -78,8 +78,7 @@ search item {
         rank-profile tensor {
 
             first-phase {
-                expression: sum(query(user_vector) * attribute(item_vector))
-                attribute(calc_tag, query(user_tag))
+                expression: 0.0
             }
 
         }
