@@ -30,12 +30,12 @@ search user {
             attribute: tensor(x{})
         }
 
-        field user_category_score tensor(x{}) {
+        field user_category_score type tensor(x{}) {
             indexing: attribute
             attribute: tensor(x{})
         }
 
-        field user_video_category_score tensor(x{}) {
+        field user_video_category_score type tensor(x{}) {
             indexing: attribute
             attribute: tensor(x{})
         }
