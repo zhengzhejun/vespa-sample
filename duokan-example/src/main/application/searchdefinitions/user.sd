@@ -8,35 +8,35 @@ search user {
         }
 
         field age type int {
-            indexing: attribute
+            indexing: summary | attribute
         }
 
         field sex type int {
-            indexing: attribute
+            indexing: summary | attribute
         }
 
         field location type tensor(x{}) {
-            indexing: attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field author_score type tensor(x{}) {
-            indexing: attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field novel_score type tensor(x{}) {
-            indexing: attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field user_category_score type tensor(x{}) {
-            indexing: attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field user_video_category_score type tensor(x{}) {
-            indexing: attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
