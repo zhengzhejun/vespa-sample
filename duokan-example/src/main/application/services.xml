@@ -3,8 +3,13 @@
 <services version="1.0">
   <admin version="2.0">
     <adminserver hostalias="node1"/>
+    <configservers>
+      <configserver hostalias="node1" />
+      <configserver hostalias="node2" />
+      <configserver hostalias="node3" />
+    </configservers>
   </admin>
-  <container id="default" version="1.0">
+  <container id="DuokanContainer" version="1.0">
     <document-api />
     <search>
       <chain id="item" inherits="vespa">
@@ -23,6 +28,8 @@
     </handler>
     <nodes>
       <node hostalias="node1"/>
+      <node hostalias="node2" />
+      <node hostalias="node3" />
     </nodes>
   </container>
 
@@ -35,6 +42,8 @@
     </documents>
     <nodes>
       <node hostalias="node1" distribution-key="0" />
+      <node hostalias="node2" distribution-key="1" />
+      <node hostalias="node3" distribution-key="2" />
     </nodes>
   </content>
 

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2017 Yahoo Holdings. Licensed under the terms of the Apache 2.0 license. See LICENSE in the project root. -->
 <hosts>
-  <host name="localhost">
+  <host name="tj1-s-staging-rec06.kscn">
     <alias>node1</alias>
+  </host>
+  <host name="tj1-s-staging-rec07.kscn">
+    <alias>node2</alias>
+  </host>
+  <host name="tj1-s-staging-rec08.kscn">
+    <alias>node3</alias>
   </host>
 </hosts>
