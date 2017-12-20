@@ -12,65 +12,65 @@ search item {
         }
 
         field read_sex type array<double> {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field trans_sex type array<double> {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field read_age type array<double> {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field trans_age type array<double> {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field read_location type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field trans_location type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field self_feature type array<double> {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field read_category_avg_score type double {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field trans_category_avg_score type double {
-            indexing: summray | attribute
+            indexing: summary | attribute
         }
 
         field author_name type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field similar_author_score type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field similar_novel_score type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field read_category_score type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
 
         field trans_category_score type tensor(x{}) {
-            indexing: summray | attribute
+            indexing: summary | attribute
             attribute: tensor(x{})
         }
     }
