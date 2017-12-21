@@ -22,6 +22,9 @@
         <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.UserTensorSearch" />
         <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch" />
       </chain>
+      <chain id="duokanItem" inherits="vespa">
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DuokanItemSearch" />
+      </chain>
     </search>
     <handler bundle="duokanexample" id="com.yahoo.vespa.handler.DemoHandler" >
       <binding>http://*:8080/demo/</binding>
