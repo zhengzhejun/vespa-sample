@@ -24,7 +24,6 @@ public class DuokanItemSearch extends Searcher{
       compositeItem.addItem(new WordItem(tags[i], "tag_list"));
     }
     QueryTreeUtil.andQueryItemWithRoot(query, compositeItem);
-
     return execution.search(query);
   }
 }

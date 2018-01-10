@@ -28,7 +28,11 @@ public class UserProfileSearcher extends Searcher {
                 addReadItemsToQuery(query, userProfile);
             }
         }
-        return execution.search(query);
+        Result result = execution.search(query);
+
+
+
+        return result;
     }
 
 

@@ -4,10 +4,7 @@
   <host name="tj1-s-staging-rec06.kscn">
     <alias>node1</alias>
   </host>
-  <host name="tj1-s-staging-rec07.kscn">
+  <host name="tj1-s-staging-rec05.kscn">
     <alias>node2</alias>
-  </host>
-  <host name="tj1-s-staging-rec08.kscn">
-    <alias>node3</alias>
   </host>
 </hosts>

@@ -5,8 +5,6 @@
     <adminserver hostalias="node1"/>
     <configservers>
       <configserver hostalias="node1" />
-      <configserver hostalias="node2" />
-      <configserver hostalias="node3" />
     </configservers>
   </admin>
   <container id="DuokanContainer" version="1.0">
@@ -32,7 +30,6 @@
     <nodes>
       <node hostalias="node1"/>
       <node hostalias="node2" />
-      <node hostalias="node3" />
     </nodes>
   </container>
 
@@ -46,7 +43,6 @@
     <nodes>
       <node hostalias="node1" distribution-key="0" />
       <node hostalias="node2" distribution-key="1" />
-      <node hostalias="node3" distribution-key="2" />
     </nodes>
   </content>
 
