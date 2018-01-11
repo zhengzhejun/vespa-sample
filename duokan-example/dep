@@ -1,0 +1,314 @@
+[INFO] Scanning for projects...
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/bundle-plugin/6-SNAPSHOT/maven-metadata.xml
+976/976 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/bundle-plugin/6-SNAPSHOT/maven-metadata.xml (976 B at 3.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/parent/6-SNAPSHOT/maven-metadata.xml
+590/590 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/parent/6-SNAPSHOT/maven-metadata.xml (590 B at 0.7 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-dependency-versions/6-SNAPSHOT/maven-metadata.xml
+            Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/annotations/6-SNAPSHOT/maven-metadata.xml
+            Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-resources-plugin/maven-metadata.xml
+967/967 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-resources-plugin/maven-metadata.xml (967 B at 0.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-install-plugin/maven-metadata.xml
+820/820 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-install-plugin/maven-metadata.xml (820 B at 0.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-deploy-plugin/maven-metadata.xml
+956/956 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/org/apache/maven/plugins/maven-deploy-plugin/maven-metadata.xml (956 B at 0.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespa-application-maven-plugin/6-SNAPSHOT/maven-metadata.xml
+            [INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building duokanexample 1.0.1
+[INFO] ------------------------------------------------------------------------
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/application/6-SNAPSHOT/maven-metadata.xml
+974/974 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/application/6-SNAPSHOT/maven-metadata.xml (974 B at 1.0 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/standalone-container/6-SNAPSHOT/maven-metadata.xml
+983/983 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/standalone-container/6-SNAPSHOT/maven-metadata.xml (983 B at 9.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-provisioning/6-SNAPSHOT/maven-metadata.xml
+982/982 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-provisioning/6-SNAPSHOT/maven-metadata.xml (982 B at 10.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-model/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-model/6-SNAPSHOT/maven-metadata.xml (2 KB at 1.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-application-package/6-SNAPSHOT/maven-metadata.xml
+2 KB          Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-application-package/6-SNAPSHOT/maven-metadata.xml (2 KB at 1.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/metrics/6-SNAPSHOT/maven-metadata.xml
+2 KB          Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/metrics/6-SNAPSHOT/maven-metadata.xml (2 KB at 1.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/logd/6-SNAPSHOT/maven-metadata.xml
+967/967 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/logd/6-SNAPSHOT/maven-metadata.xml (967 B at 10.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-lib/6-SNAPSHOT/maven-metadata.xml
+973/973 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-lib/6-SNAPSHOT/maven-metadata.xml (973 B at 0.5 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchcore/6-SNAPSHOT/maven-metadata.xml
+973/973 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchcore/6-SNAPSHOT/maven-metadata.xml (973 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/storage/6-SNAPSHOT/maven-metadata.xml
+970/970 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/storage/6-SNAPSHOT/maven-metadata.xml (970 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vsm/6-SNAPSHOT/maven-metadata.xml
+966/966 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vsm/6-SNAPSHOT/maven-metadata.xml (966 B at 8.8 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespaclient-core/6-SNAPSHOT/maven-metadata.xml
+979/979 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespaclient-core/6-SNAPSHOT/maven-metadata.xml (979 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/indexinglanguage/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/indexinglanguage/6-SNAPSHOT/maven-metadata.xml (2 KB at 24.0 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespajlib/6-SNAPSHOT/maven-metadata.xml
+972/972 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespajlib/6-SNAPSHOT/maven-metadata.xml (972 B at 18.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/document/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/document/6-SNAPSHOT/maven-metadata.xml (2 KB at 16.7 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config/6-SNAPSHOT/maven-metadata.xml
+969/969 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config/6-SNAPSHOT/maven-metadata.xml (969 B at 10.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/configgen/6-SNAPSHOT/maven-metadata.xml
+972/972 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/configgen/6-SNAPSHOT/maven-metadata.xml (972 B at 13.0 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jrt/6-SNAPSHOT/maven-metadata.xml
+966/966 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jrt/6-SNAPSHOT/maven-metadata.xml (966 B at 18.5 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/yolean/6-SNAPSHOT/maven-metadata.xml
+969/969 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/yolean/6-SNAPSHOT/maven-metadata.xml (969 B at 0.5 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespalog/6-SNAPSHOT/maven-metadata.xml
+971/971 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespalog/6-SNAPSHOT/maven-metadata.xml (971 B at 1.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/defaults/6-SNAPSHOT/maven-metadata.xml
+971/971 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/defaults/6-SNAPSHOT/maven-metadata.xml (971 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/predicate-search-core/6-SNAPSHOT/maven-metadata.xml
+984/984 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/predicate-search-core/6-SNAPSHOT/maven-metadata.xml (984 B at 17.8 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/linguistics/6-SNAPSHOT/maven-metadata.xml
+974/974 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/linguistics/6-SNAPSHOT/maven-metadata.xml (974 B at 1.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/configdefinitions/6-SNAPSHOT/maven-metadata.xml
+980/980 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/configdefinitions/6-SNAPSHOT/maven-metadata.xml (980 B at 0.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/filedistributionmanager/6-SNAPSHOT/maven-metadata.xml
+986/986 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/filedistributionmanager/6-SNAPSHOT/maven-metadata.xml (986 B at 25.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchsummary/6-SNAPSHOT/maven-metadata.xml
+976/976 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchsummary/6-SNAPSHOT/maven-metadata.xml (976 B at 1.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-model-api/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-model-api/6-SNAPSHOT/maven-metadata.xml (2 KB at 0.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-dev/6-SNAPSHOT/maven-metadata.xml
+976/976 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-dev/6-SNAPSHOT/maven-metadata.xml (976 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_core/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_core/6-SNAPSHOT/maven-metadata.xml (2 KB at 0.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_http_service/6-SNAPSHOT/maven-metadata.xml
+981/981 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_http_service/6-SNAPSHOT/maven-metadata.xml (981 B at 29.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/simplemetrics/6-SNAPSHOT/maven-metadata.xml
+976/976 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/simplemetrics/6-SNAPSHOT/maven-metadata.xml (976 B at 0.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/provided-dependencies/6-SNAPSHOT/maven-metadata.xml
+984/984 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/provided-dependencies/6-SNAPSHOT/maven-metadata.xml (984 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/component/6-SNAPSHOT/maven-metadata.xml
+972/972 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/component/6-SNAPSHOT/maven-metadata.xml (972 B at 41.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-disc/6-SNAPSHOT/maven-metadata.xml
+977/977 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-disc/6-SNAPSHOT/maven-metadata.xml (977 B at 1.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-core/6-SNAPSHOT/maven-metadata.xml
+977/977 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-core/6-SNAPSHOT/maven-metadata.xml (977 B at 19.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-accesslogging/6-SNAPSHOT/maven-metadata.xml
+986/986 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-accesslogging/6-SNAPSHOT/maven-metadata.xml (986 B at 1.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/processing/6-SNAPSHOT/maven-metadata.xml
+973/973 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/processing/6-SNAPSHOT/maven-metadata.xml (973 B at 26.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/chain/6-SNAPSHOT/maven-metadata.xml
+968/968 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/chain/6-SNAPSHOT/maven-metadata.xml (968 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-di/6-SNAPSHOT/maven-metadata.xml
+975/975 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-di/6-SNAPSHOT/maven-metadata.xml (975 B at 52.9 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/messagebus/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/messagebus/6-SNAPSHOT/maven-metadata.xml (2 KB at 30.0 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/documentapi/6-SNAPSHOT/maven-metadata.xml
+974/974 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/documentapi/6-SNAPSHOT/maven-metadata.xml (974 B at 0.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vdslib/6-SNAPSHOT/maven-metadata.xml
+969/969 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vdslib/6-SNAPSHOT/maven-metadata.xml (969 B at 30.5 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/fileacquirer/6-SNAPSHOT/maven-metadata.xml
+975/975 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/fileacquirer/6-SNAPSHOT/maven-metadata.xml (975 B at 29.8 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/statistics/6-SNAPSHOT/maven-metadata.xml
+973/973 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/statistics/6-SNAPSHOT/maven-metadata.xml (973 B at 0.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-messagebus/6-SNAPSHOT/maven-metadata.xml
+983/983 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-messagebus/6-SNAPSHOT/maven-metadata.xml (983 B at 0.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/messagebus-disc/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/messagebus-disc/6-SNAPSHOT/maven-metadata.xml (2 KB at 45.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_messagebus_service/6-SNAPSHOT/maven-metadata.xml
+987/987 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_messagebus_service/6-SNAPSHOT/maven-metadata.xml (987 B at 19.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchlib/6-SNAPSHOT/maven-metadata.xml
+972/972 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/searchlib/6-SNAPSHOT/maven-metadata.xml (972 B at 0.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-jersey2/6-SNAPSHOT/maven-metadata.xml
+980/980 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-jersey2/6-SNAPSHOT/maven-metadata.xml (980 B at 14.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespa_jersey2/6-SNAPSHOT/maven-metadata.xml
+597/597 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/vespa_jersey2/6-SNAPSHOT/maven-metadata.xml (597 B at 12.7 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-search-and-docproc/6-SNAPSHOT/maven-metadata.xml
+991/991 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-search-and-docproc/6-SNAPSHOT/maven-metadata.xml (991 B at 0.7 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-search/6-SNAPSHOT/maven-metadata.xml
+979/979 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/container-search/6-SNAPSHOT/maven-metadata.xml (979 B at 41.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/fsa/6-SNAPSHOT/maven-metadata.xml
+966/966 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/fsa/6-SNAPSHOT/maven-metadata.xml (966 B at 0.2 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/docproc/6-SNAPSHOT/maven-metadata.xml
+970/970 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/docproc/6-SNAPSHOT/maven-metadata.xml (970 B at 1.1 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-bundle/6-SNAPSHOT/maven-metadata.xml
+976/976 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/config-bundle/6-SNAPSHOT/maven-metadata.xml (976 B at 13.4 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/zkfacade/6-SNAPSHOT/maven-metadata.xml
+2 KB               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/zkfacade/6-SNAPSHOT/maven-metadata.xml (2 KB at 0.6 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_jetty/6-SNAPSHOT/maven-metadata.xml
+974/974 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/yahoo/vespa/jdisc_jetty/6-SNAPSHOT/maven-metadata.xml (974 B at 0.3 KB/sec)
+Downloading: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/xiaomi/infra/mdh-root/1.0.0-SNAPSHOT/maven-metadata.xml
+601/601 B               Downloaded: http://nexus.d.xiaomi.net/nexus/content/groups/public/com/xiaomi/infra/mdh-root/1.0.0-SNAPSHOT/maven-metadata.xml (601 B at 30.9 KB/sec)
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ duokanexample ---
+[INFO] com.yahoo.vespa:duokanexample:container-plugin:1.0.1
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- com.yahoo.vespa:application:jar:6-SNAPSHOT:test
+[INFO] |  +- com.yahoo.vespa:standalone-container:jar:6-SNAPSHOT:test
+[INFO] |  +- org.scala-lang:scala-library:jar:2.11.4:test
+[INFO] |  +- com.yahoo.vespa:config-provisioning:jar:6-SNAPSHOT:test
+[INFO] |  |  \- com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:config-model:jar:6-SNAPSHOT:test
+[INFO] |  |  +- commons-io:commons-io:jar:2.4:compile
+[INFO] |  |  +- com.yahoo.vespa:config-application-package:jar:6-SNAPSHOT:test
+[INFO] |  |  |  +- com.thaiopensource:jing:jar:20091111:test
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:provided
+[INFO] |  |  +- com.yahoo.vespa:metrics:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:logd:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:searchcore:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:storage:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:vsm:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:vespaclient-core:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:indexinglanguage:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- com.yahoo.vespa:linguistics:jar:6-SNAPSHOT:provided
+[INFO] |  |  |     \- com.yahoo.vespa:configdefinitions:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:filedistributionmanager:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:searchsummary:jar:6-SNAPSHOT:test
+[INFO] |  |  \- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- com.yahoo.vespa:config-model-api:jar:6-SNAPSHOT:test
+[INFO] |  +- com.yahoo.vespa:jrt:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:zkfacade:jar:6-SNAPSHOT:test
+[INFO] |  |  +- org.apache.curator:curator-recipes:jar:2.9.1:test
+[INFO] |  |  |  \- org.apache.curator:curator-framework:jar:2.9.1:test
+[INFO] |  |  |     \- org.apache.curator:curator-client:jar:2.9.1:test
+[INFO] |  |  \- org.slf4j:slf4j-jdk14:jar:1.7.5:provided
+[INFO] |  +- com.yahoo.vespa:jdisc_jetty:jar:6-SNAPSHOT:test
+[INFO] |  |  +- org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:jar:1.0.8:test
+[INFO] |  |  |  +- org.ow2.asm:asm-debug-all:jar:5.0.3:test
+[INFO] |  |  |  +- org.apache.aries.spifly:org.apache.aries.spifly.core-internal:jar:1.0.8:test
+[INFO] |  |  |  |  \- org.apache.aries:org.apache.aries.util:jar:1.0.0:test
+[INFO] |  |  |  \- org.apache.aries.spifly:org.apache.aries.spifly.weaver-internal:jar:1.0.8:test
+[INFO] |  |  +- org.eclipse.jetty:jetty-continuation:jar:9.4.8.v20171121:test
+[INFO] |  |  +- org.eclipse.jetty:jetty-server:jar:9.4.8.v20171121:test
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-io:jar:9.4.8.v20171121:provided
+[INFO] |  |  +- org.eclipse.jetty:jetty-servlet:jar:9.4.8.v20171121:test
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-security:jar:9.4.8.v20171121:test
+[INFO] |  |  +- org.eclipse.jetty:jetty-servlets:jar:9.4.8.v20171121:test
+[INFO] |  |  \- org.eclipse.jetty:jetty-jmx:jar:9.4.8.v20171121:test
+[INFO] |  +- com.ibm.icu:icu4j:jar:57.1:test
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  +- org.antlr:antlr-runtime:jar:3.5.2:test
+[INFO] |  +- org.antlr:antlr4-runtime:jar:4.5:test
+[INFO] |  |  \- org.abego.treelayout:org.abego.treelayout.core:jar:1.0.1:test
+[INFO] |  +- org.apache.commons:commons-exec:jar:1.3:test
+[INFO] |  +- org.hdrhistogram:HdrHistogram:jar:2.1.8:test
+[INFO] |  +- xerces:xercesImpl:jar:2.11.0:test
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.4.01:provided
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.7.0:test
+[INFO] |  +- commons-beanutils:commons-beanutils-core:jar:1.8.0:test
+[INFO] |  +- commons-configuration:commons-configuration:jar:1.6:test
+[INFO] |  +- commons-digester:commons-digester:jar:1.8:test
+[INFO] |  +- org.bouncycastle:bcpkix-jdk15on:jar:1.58:test
+[INFO] |  \- org.bouncycastle:bcprov-jdk15on:jar:1.58:test
+[INFO] +- com.yahoo.vespa:container-dev:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.8.3:provided
+[INFO] |  +- com.yahoo.vespa:jdisc_core:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.2:provided
+[INFO] |  |  +- aopalliance:aopalliance:jar:1.0:provided
+[INFO] |  |  +- com.google.inject.extensions:guice-assistedinject:jar:3.0:provided
+[INFO] |  |  +- com.google.inject.extensions:guice-multibindings:jar:3.0:provided
+[INFO] |  |  +- commons-daemon:commons-daemon:jar:1.0.3:provided
+[INFO] |  |  +- org.apache.felix:org.apache.felix.framework:jar:4.2.1:provided
+[INFO] |  |  +- org.apache.felix:org.apache.felix.log:jar:1.0.1:provided
+[INFO] |  |  +- org.slf4j:jcl-over-slf4j:jar:1.7.5:provided
+[INFO] |  |  +- org.slf4j:log4j-over-slf4j:jar:1.7.5:provided
+[INFO] |  |  \- com.yahoo.vespa:yolean:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:jdisc_http_service:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:simplemetrics:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.google.code.findbugs:annotations:jar:1.3.9:provided
+[INFO] |  |  \- com.google.code.findbugs:jsr305:jar:1.3.9:provided
+[INFO] |  +- com.google.guava:guava:jar:18.0:compile
+[INFO] |  +- javax.servlet:javax.servlet-api:jar:3.1.0:provided
+[INFO] |  +- com.google.inject:guice:jar:no_aop:3.0:provided
+[INFO] |  |  \- javax.inject:javax.inject:jar:1:provided
+[INFO] |  +- org.apache.felix:org.apache.felix.main:jar:4.2.1:provided
+[INFO] |  +- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] |  +- com.yahoo.vespa:provided-dependencies:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:provided
+[INFO] |  |  \- org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:provided
+[INFO] |  +- com.yahoo.vespa:component:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:container-disc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:container-core:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:container-accesslogging:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:processing:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  \- com.yahoo.vespa:chain:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |     \- com.yahoo.vespa:container-di:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:messagebus:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:documentapi:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  \- com.yahoo.vespa:vdslib:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:fileacquirer:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  \- com.yahoo.vespa:statistics:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:container-messagebus:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:messagebus-disc:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  \- com.yahoo.vespa:jdisc_messagebus_service:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:vespalog:jar:6-SNAPSHOT:provided
+[INFO] |  |  \- com.yahoo.vespa:searchlib:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:container-jersey2:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:vespa_jersey2:pom:6-SNAPSHOT:provided
+[INFO] |  |  +- javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided
+[INFO] |  |  +- org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.23.2:provided
+[INFO] |  |  |  +- org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided
+[INFO] |  |  |  +- org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided
+[INFO] |  |  |  |  +- org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.23.2:provided
+[INFO] |  |  |  |  \- org.glassfish.hk2:osgi-resource-locator:jar:1.0.1:provided
+[INFO] |  |  |  \- org.glassfish.jersey.core:jersey-server:jar:2.23.2:provided
+[INFO] |  |  |     +- org.glassfish.jersey.media:jersey-media-jaxb:jar:2.23.2:provided
+[INFO] |  |  |     \- javax.validation:validation-api:jar:1.1.0.Final:provided
+[INFO] |  |  +- org.glassfish.jersey.containers:jersey-container-servlet:jar:2.23.2:provided
+[INFO] |  |  +- org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.23.2:provided
+[INFO] |  |  |  +- org.glassfish.jersey.ext:jersey-entity-filtering:jar:2.23.2:provided
+[INFO] |  |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.5.4:provided
+[INFO] |  |  |  \- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.5.4:provided
+[INFO] |  |  |     \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.5.4:provided
+[INFO] |  |  +- org.glassfish.jersey.media:jersey-media-multipart:jar:2.23.2:provided
+[INFO] |  |  |  \- org.jvnet.mimepull:mimepull:jar:1.9.6:provided
+[INFO] |  |  +- org.glassfish.jersey.ext:jersey-proxy-client:jar:2.23.2:provided
+[INFO] |  |  +- org.glassfish.jersey.core:jersey-client:jar:2.23.2:provided
+[INFO] |  |  |  +- org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided
+[INFO] |  |  |  |  +- org.glassfish.hk2:hk2-utils:jar:2.5.0-b05:provided
+[INFO] |  |  |  |  \- org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b05:provided
+[INFO] |  |  |  \- org.glassfish.hk2:hk2-locator:jar:2.5.0-b05:provided
+[INFO] |  |  |     \- org.javassist:javassist:jar:3.20.0-GA:provided
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.8.3:provided
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.8.3:provided
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.3:provided
+[INFO] |  +- com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:defaults:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:container-search-and-docproc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:container-search:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:fsa:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  \- net.jcip:jcip-annotations:jar:1.0:provided
+[INFO] |  |  +- com.yahoo.vespa:docproc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.3.3:provided
+[INFO] |  |  \- org.apache.httpcomponents:httpclient:jar:4.3.6:provided
+[INFO] |  +- com.yahoo.vespa:config-bundle:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:config:jar:6-SNAPSHOT:provided
+[INFO] |  |  \- com.yahoo.vespa:configgen:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:document:jar:6-SNAPSHOT:provided
+[INFO] |  \- com.yahoo.vespa:predicate-search-core:jar:6-SNAPSHOT:provided
+[INFO] +- org.json:json:jar:20090211:compile
+[INFO] +- com.xiaomi:xiaomi-common-zookeeper:jar:2.7.28:compile
+[INFO] |  +- com.xiaomi:xiaomi-common-utils:jar:2.7.28:compile
+[INFO] |  |  \- com.typesafe:config:jar:1.2.1:compile
+[INFO] |  +- org.apache.zookeeper:zookeeper:jar:3.4.5-mdh1.2.2:compile
+[INFO] |  |  +- log4j:log4j:jar:1.2.16:compile
+[INFO] |  |  +- jline:jline:jar:0.9.94:compile
+[INFO] |  |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  |  \- org.codehaus.jettison:jettison:jar:1.1:compile
+[INFO] |  |     \- stax:stax-api:jar:1.0.1:compile
+[INFO] |  \- zkclient:zkclient:jar:0.2.3:compile
+[INFO] +- commons-codec:commons-codec:jar:1.10:compile
+[INFO] +- com.xiaomi.infra:pegasus-client:jar:1.6.1-for-thrift-0.5:compile
+[INFO] |  +- org.apache.thrift:thrift:jar:0.5.0-fix-thrift1190:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.2:compile
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.7.2:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.1:compile
+[INFO] |  +- com.101tec:zkclient:jar:0.2:compile
+[INFO] |  +- io.netty:netty-all:jar:4.0.33.Final:compile
+[INFO] |  \- com.xiaomi.common.perfcounter:xiaomi-common-perfcounter:jar:2.7.9:compile
+[INFO] |     +- com.yammer.metrics:metrics-core:jar:2.2.0:compile
+[INFO] |     +- org.aspectj:aspectjrt:jar:1.8.4:compile
+[INFO] |     \- org.aspectj:aspectjweaver:jar:1.8.4:compile
+[INFO] \- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:21 min
+[INFO] Finished at: 2018-01-11T19:27:11+08:00
+[INFO] Final Memory: 22M/124M
+[INFO] ------------------------------------------------------------------------

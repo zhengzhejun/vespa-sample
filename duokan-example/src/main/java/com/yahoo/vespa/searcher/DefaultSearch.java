@@ -11,6 +11,7 @@ import com.yahoo.search.Searcher;
 import com.yahoo.search.query.QueryTree;
 import com.yahoo.search.searchchain.Execution;
 import com.yahoo.vespa.hbase.HbaseHandler;
+import com.yahoo.vespa.hbase.PegasusHandler;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.json.JSONObject;
@@ -21,7 +22,8 @@ import org.slf4j.LoggerFactory;
 public class DefaultSearch extends Searcher {
 
   private static Logger logger = LoggerFactory.getLogger(DefaultSearch.class);
-  private static HbaseHandler hbaseHandler = HbaseHandler.getInstance(EnvironmentType.STAGING);
+//  private static HbaseHandler hbaseHandler = HbaseHandler.getInstance(EnvironmentType.STAGING);
+  private static PegasusHandler pegasusHandler = PegasusHandler.getInstance(EnvironmentType.STAGING);
 
   @Override
   public Result search(Query query, Execution execution) {
@@ -29,9 +31,10 @@ public class DefaultSearch extends Searcher {
     String userId = query.properties().getString("userId", "");
     if(StringUtils.isNotBlank(userId)) {
       logger.info("userId is {}", userId);
-      JSONObject userObject;
+      JSONObject userObject = new JSONObject();
       try{
-        userObject = hbaseHandler.getUser(userId);
+//        userObject = hbaseHandler.getUser(userId);
+        userObject = pegasusHandler.getDocument(userId);
         logger.info("hbase user document is {}", userObject.toString());
       } catch (Exception e) {
         logger.error("Error happend in search, ex:{}", ExceptionUtils.getFullStackTrace(e));
