@@ -1,0 +1,525 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building duokanexample 1.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ duokanexample ---
+[INFO] com.yahoo.vespa:duokanexample:container-plugin:1.0.1
+[INFO] +- junit:junit:jar:4.11:test (scope not updated to compile)
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- com.yahoo.vespa:application:jar:6-SNAPSHOT:test
+[INFO] |  +- com.yahoo.vespa:standalone-container:jar:6-SNAPSHOT:test
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.11.4:test - omitted for duplicate)
+[INFO] |  +- org.scala-lang:scala-library:jar:2.11.4:test
+[INFO] |  +- com.yahoo.vespa:config-provisioning:jar:6-SNAPSHOT:test
+[INFO] |  |  \- com.yahoo.vespa:annotations:jar:6-SNAPSHOT:test
+[INFO] |  +- com.yahoo.vespa:config-model:jar:6-SNAPSHOT:test
+[INFO] |  |  +- (commons-io:commons-io:jar:2.4:compile - scope updated from test; omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:config-application-package:jar:6-SNAPSHOT:test
+[INFO] |  |  |  +- com.thaiopensource:jing:jar:20091111:test
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:test
+[INFO] |  |  |     +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0:test - omitted for conflict with 2.8.3)
+[INFO] |  |  |     \- (com.fasterxml.jackson.core:jackson-core:jar:2.8.3:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:metrics:jar:6-SNAPSHOT:test
+[INFO] |  |  +- com.yahoo.vespa:logd:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:searchcore:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:storage:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:vsm:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:vespaclient-core:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:metrics:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:indexinglanguage:jar:6-SNAPSHOT:test
+[INFO] |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:document:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:linguistics:jar:6-SNAPSHOT:test
+[INFO] |  |  |  |  +- com.yahoo.vespa:configdefinitions:jar:6-SNAPSHOT:test
+[INFO] |  |  |  |  \- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:predicate-search-core:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  |  \- (commons-codec:commons-codec:jar:1.4:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:filedistributionmanager:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:searchsummary:jar:6-SNAPSHOT:test
+[INFO] |  |  |  \- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.1:compile - scope updated from test; omitted for duplicate)
+[INFO] |  |  \- (commons-lang:commons-lang:jar:2.6:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:config-model-api:jar:6-SNAPSHOT:test
+[INFO] |  +- com.yahoo.vespa:jrt:jar:6-SNAPSHOT:test
+[INFO] |  |  \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  +- (com.yahoo.vespa:container-dev:jar:6-SNAPSHOT:test - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:zkfacade:jar:6-SNAPSHOT:test
+[INFO] |  |  +- org.apache.curator:curator-recipes:jar:2.9.1:test
+[INFO] |  |  |  \- org.apache.curator:curator-framework:jar:2.9.1:test
+[INFO] |  |  |     \- org.apache.curator:curator-client:jar:2.9.1:test
+[INFO] |  |  |        +- (org.apache.zookeeper:zookeeper:jar:3.4.6:test - omitted for conflict with 3.4.5-mdh1.2.2)
+[INFO] |  |  |        +- (com.google.guava:guava:jar:16.0.1:test - omitted for conflict with 18.0)
+[INFO] |  |  |        \- (org.slf4j:slf4j-api:jar:1.7.6:test - omitted for conflict with 1.7.5)
+[INFO] |  |  \- org.slf4j:slf4j-jdk14:jar:1.7.5:test
+[INFO] |  |     \- (org.slf4j:slf4j-api:jar:1.7.5:test - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:jdisc_jetty:jar:6-SNAPSHOT:test
+[INFO] |  |  +- org.apache.aries.spifly:org.apache.aries.spifly.dynamic.bundle:jar:1.0.8:test
+[INFO] |  |  |  +- org.ow2.asm:asm-debug-all:jar:5.0.3:test
+[INFO] |  |  |  +- org.apache.aries.spifly:org.apache.aries.spifly.core-internal:jar:1.0.8:test
+[INFO] |  |  |  |  \- org.apache.aries:org.apache.aries.util:jar:1.0.0:test
+[INFO] |  |  |  \- org.apache.aries.spifly:org.apache.aries.spifly.weaver-internal:jar:1.0.8:test
+[INFO] |  |  |     \- (org.apache.aries.spifly:org.apache.aries.spifly.core-internal:jar:1.0.8:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.jetty:jetty-continuation:jar:9.4.8.v20171121:test
+[INFO] |  |  +- org.eclipse.jetty:jetty-server:jar:9.4.8.v20171121:test
+[INFO] |  |  |  +- (javax.servlet:javax.servlet-api:jar:3.1.0:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-io:jar:9.4.8.v20171121:test
+[INFO] |  |  |     \- (org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.jetty:jetty-servlet:jar:9.4.8.v20171121:test
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-security:jar:9.4.8.v20171121:test
+[INFO] |  |  |     \- (org.eclipse.jetty:jetty-server:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.jetty:jetty-servlets:jar:9.4.8.v20171121:test
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-continuation:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.eclipse.jetty:jetty-io:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  |  \- org.eclipse.jetty:jetty-jmx:jar:9.4.8.v20171121:test
+[INFO] |  |     \- (org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:test - omitted for duplicate)
+[INFO] |  +- com.ibm.icu:icu4j:jar:57.1:test
+[INFO] |  +- (commons-collections:commons-collections:jar:3.2.1:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- org.antlr:antlr-runtime:jar:3.5.2:test
+[INFO] |  +- org.antlr:antlr4-runtime:jar:4.5:test
+[INFO] |  |  \- org.abego.treelayout:org.abego.treelayout.core:jar:1.0.1:test
+[INFO] |  +- org.apache.commons:commons-exec:jar:1.3:test
+[INFO] |  +- org.hdrhistogram:HdrHistogram:jar:2.1.8:test
+[INFO] |  +- xerces:xercesImpl:jar:2.11.0:test
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.4.01:test
+[INFO] |  +- (commons-beanutils:commons-beanutils:jar:1.7.0:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- (commons-beanutils:commons-beanutils-core:jar:1.8.0:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- (commons-configuration:commons-configuration:jar:1.6:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- (commons-digester:commons-digester:jar:1.8:compile - scope updated from test; omitted for duplicate)
+[INFO] |  +- org.bouncycastle:bcpkix-jdk15on:jar:1.58:test
+[INFO] |  |  \- (org.bouncycastle:bcprov-jdk15on:jar:1.58:test - omitted for duplicate)
+[INFO] |  \- org.bouncycastle:bcprov-jdk15on:jar:1.58:test
+[INFO] +- com.yahoo.vespa:container-dev:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.8.3:provided
+[INFO] |  +- com.yahoo.vespa:jdisc_core:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- (xml-apis:xml-apis:jar:1.4.01:provided - omitted for duplicate)
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.2:provided
+[INFO] |  |  +- (aopalliance:aopalliance:jar:1.0:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:18.0:provided - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:no_aop:3.0:provided - omitted for duplicate)
+[INFO] |  |  +- com.google.inject.extensions:guice-assistedinject:jar:3.0:provided
+[INFO] |  |  +- com.google.inject.extensions:guice-multibindings:jar:3.0:provided
+[INFO] |  |  +- commons-daemon:commons-daemon:jar:1.0.3:provided
+[INFO] |  |  +- org.apache.felix:org.apache.felix.framework:jar:4.2.1:provided
+[INFO] |  |  +- org.apache.felix:org.apache.felix.log:jar:1.0.1:provided
+[INFO] |  |  +- org.slf4j:slf4j-api:jar:1.7.5:provided
+[INFO] |  |  +- org.slf4j:jcl-over-slf4j:jar:1.7.5:provided
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.5:provided - omitted for duplicate)
+[INFO] |  |  +- org.slf4j:log4j-over-slf4j:jar:1.7.5:provided
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.5:provided - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-jdk14:jar:1.7.5:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:yolean:jar:6-SNAPSHOT:provided
+[INFO] |  |  \- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:jdisc_http_service:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:simplemetrics:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.google.code.findbugs:annotations:jar:1.3.9:provided
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:1.3.9:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  |  \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  +- (com.google.guava:guava:jar:18.0:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- javax.servlet:javax.servlet-api:jar:3.1.0:provided
+[INFO] |  +- com.google.inject:guice:jar:no_aop:3.0:provided
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  |  \- (aopalliance:aopalliance:jar:1.0:provided - omitted for duplicate)
+[INFO] |  +- org.apache.felix:org.apache.felix.main:jar:4.2.1:provided
+[INFO] |  |  \- (org.apache.felix:org.apache.felix.framework:jar:4.2.1:provided - omitted for duplicate)
+[INFO] |  +- (commons-logging:commons-logging:jar:1.1.1:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:provided-dependencies:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- (com.yahoo.vespa:jdisc_core:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:jdisc_http_service:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:provided
+[INFO] |  |  +- org.eclipse.jetty:jetty-http:jar:9.4.8.v20171121:provided
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-util:jar:9.4.8.v20171121:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.eclipse.jetty:jetty-io:jar:9.4.8.v20171121:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:defaults:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:18.0:provided - omitted for duplicate)
+[INFO] |  |  +- (com.google.inject:guice:jar:no_aop:3.0:provided - omitted for duplicate)
+[INFO] |  |  \- (org.apache.felix:org.apache.felix.main:jar:4.2.1:provided - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:component:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:container-disc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- (org.json:json:jar:20090211:provided - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:container-core:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- (org.json:json:jar:20090211:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:container-accesslogging:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:processing:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  \- com.yahoo.vespa:chain:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |     +- (com.google.code.findbugs:annotations:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |  |     +- (com.google.code.findbugs:jsr305:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |  |     +- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |     +- com.yahoo.vespa:container-di:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |     |  +- (com.google.code.findbugs:annotations:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |  |     |  +- (com.google.code.findbugs:jsr305:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |  |     |  +- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |     |  \- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |     +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |     \- (net.jcip:jcip-annotations:jar:1.0:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:linguistics:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:messagebus:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.yahoo.vespa:configdefinitions:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- (com.yahoo.vespa:jrt:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:document:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:documentapi:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  +- (com.yahoo.vespa:component:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.yahoo.vespa:messagebus:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- com.yahoo.vespa:vdslib:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  |  |  +- (com.yahoo.vespa:document:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (com.yahoo.vespa:configdefinitions:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.yahoo.vespa:document:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.yahoo.vespa:configdefinitions:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.yahoo.vespa:fileacquirer:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  \- com.yahoo.vespa:statistics:jar:6-SNAPSHOT:provided
+[INFO] |  |  |     +- (com.google.code.findbugs:annotations:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |     +- (com.google.code.findbugs:jsr305:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |     \- (com.yahoo.vespa:vespalog:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:container-messagebus:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:messagebus-disc:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  \- com.yahoo.vespa:jdisc_messagebus_service:jar:6-SNAPSHOT:provided
+[INFO] |  |  |     +- (com.yahoo.vespa:component:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |     \- (com.yahoo.vespa:messagebus:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:vespalog:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:defaults:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  \- com.yahoo.vespa:searchlib:jar:6-SNAPSHOT:provided
+[INFO] |  |     +- (com.yahoo.vespa:document:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |     \- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:container-jersey2:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:vespa_jersey2:pom:6-SNAPSHOT:provided
+[INFO] |  |  +- javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided
+[INFO] |  |  +- org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.23.2:provided
+[INFO] |  |  |  +- org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided
+[INFO] |  |  |  +- org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided
+[INFO] |  |  |  |  +- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (javax.annotation:javax.annotation-api:jar:1.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.23.2:provided
+[INFO] |  |  |  |  +- (org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2:hk2-locator:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- org.glassfish.hk2:osgi-resource-locator:jar:1.0.1:provided
+[INFO] |  |  |  +- org.glassfish.jersey.core:jersey-server:jar:2.23.2:provided
+[INFO] |  |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.jersey.core:jersey-client:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- org.glassfish.jersey.media:jersey-media-jaxb:jar:2.23.2:provided
+[INFO] |  |  |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.glassfish.hk2:hk2-locator:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (org.glassfish.hk2:osgi-resource-locator:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (javax.annotation:javax.annotation-api:jar:1.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2:hk2-locator:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- javax.validation:validation-api:jar:1.1.0.Final:provided
+[INFO] |  |  |  \- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.glassfish.jersey.containers:jersey-container-servlet:jar:2.23.2:provided
+[INFO] |  |  |  +- (org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-server:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  \- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.glassfish.jersey.media:jersey-media-json-jackson:jar:2.23.2:provided
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.glassfish.jersey.ext:jersey-entity-filtering:jar:2.23.2:provided
+[INFO] |  |  |  |  \- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.5.4:provided
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.5.4:provided
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.5.4:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  |  \- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.5.4:provided
+[INFO] |  |  |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-annotations:jar:2.5.4:provided - omitted for conflict with 2.8.3)
+[INFO] |  |  +- org.glassfish.jersey.media:jersey-media-multipart:jar:2.23.2:provided
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.jvnet.mimepull:mimepull:jar:1.9.6:provided
+[INFO] |  |  +- org.glassfish.jersey.ext:jersey-proxy-client:jar:2.23.2:provided
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  \- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.glassfish.jersey.core:jersey-client:jar:2.23.2:provided
+[INFO] |  |  |  +- (javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.23.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided
+[INFO] |  |  |  |  +- org.glassfish.hk2:hk2-utils:jar:2.5.0-b05:provided
+[INFO] |  |  |  |  \- org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b05:provided
+[INFO] |  |  |  +- (org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.glassfish.hk2:hk2-locator:jar:2.5.0-b05:provided
+[INFO] |  |  |     +- (org.glassfish.hk2.external:javax.inject:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.glassfish.hk2:hk2-api:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.glassfish.hk2:hk2-utils:jar:2.5.0-b05:provided - omitted for duplicate)
+[INFO] |  |  |     \- org.javassist:javassist:jar:3.20.0-GA:provided
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.8.3:provided
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-core:jar:2.8.3:provided
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.3:provided
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0:provided - omitted for conflict with 2.8.3)
+[INFO] |  +- com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided
+[INFO] |  |  \- (net.jpountz.lz4:lz4:jar:1.3.0:provided - omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:defaults:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:container-search-and-docproc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:container-search:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- com.yahoo.vespa:fsa:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- (org.apache.httpcomponents:httpcore:jar:4.3.3:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.httpcomponents:httpclient:jar:4.3.6:provided - omitted for duplicate)
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.4:provided - omitted for duplicate)
+[INFO] |  |  |  +- net.jcip:jcip-annotations:jar:1.0:provided
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |  +- com.yahoo.vespa:docproc:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- (org.apache.httpcomponents:httpcore:jar:4.3.3:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  |  \- (org.apache.httpcomponents:httpclient:jar:4.3.6:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- com.yahoo.vespa:config-bundle:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- com.yahoo.vespa:config:jar:6-SNAPSHOT:provided
+[INFO] |  |  |  +- (com.google.code.findbugs:annotations:jar:1.3.9:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:config-lib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:configgen:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:jrt:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:yolean:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.yahoo.vespa:vespalog:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.8.3:provided - omitted for duplicate)
+[INFO] |  |  |  \- (net.jpountz.lz4:lz4:jar:1.3.0:provided - omitted for duplicate)
+[INFO] |  |  \- com.yahoo.vespa:configgen:jar:6-SNAPSHOT:provided
+[INFO] |  +- com.yahoo.vespa:document:jar:6-SNAPSHOT:provided
+[INFO] |  |  +- (commons-codec:commons-codec:jar:1.4:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  |  +- (net.jpountz.lz4:lz4:jar:1.3.0:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:config:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:predicate-search-core:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  |  \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |  \- com.yahoo.vespa:predicate-search-core:jar:6-SNAPSHOT:provided
+[INFO] |     +- (com.yahoo.vespa:vespajlib:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] |     \- (com.yahoo.vespa:annotations:jar:6-SNAPSHOT:provided - omitted for duplicate)
+[INFO] +- org.json:json:jar:20090211:compile
+[INFO] +- com.xiaomi:xiaomi-common-zookeeper:jar:2.7.28:compile
+[INFO] |  +- com.xiaomi:xiaomi-common-utils:jar:2.7.28:compile
+[INFO] |  |  +- com.google.guava:guava:jar:18.0:compile
+[INFO] |  |  +- org.apache.commons:commons-lang3:jar:3.1:compile
+[INFO] |  |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  |  +- (commons-codec:commons-codec:jar:1.4:compile - omitted for conflict with 1.10)
+[INFO] |  |  \- com.typesafe:config:jar:1.2.1:compile
+[INFO] |  +- org.apache.zookeeper:zookeeper:jar:3.4.5-mdh1.2.2:compile
+[INFO] |  |  +- log4j:log4j:jar:1.2.16:compile
+[INFO] |  |  +- jline:jline:jar:0.9.94:compile
+[INFO] |  |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (commons-codec:commons-codec:jar:1.2:compile - omitted for conflict with 1.4)
+[INFO] |  |  \- org.codehaus.jettison:jettison:jar:1.1:compile
+[INFO] |  |     \- stax:stax-api:jar:1.0.1:compile
+[INFO] |  \- zkclient:zkclient:jar:0.2.3:compile
+[INFO] |     \- (log4j:log4j:jar:1.2.14:compile - omitted for conflict with 1.2.16)
+[INFO] +- com.xiaomi.infra:hbase-client:jar:2.2.7:compile
+[INFO] |  +- (org.apache.zookeeper:zookeeper:jar:3.4.4-mdh1.1.1:compile - omitted for conflict with 3.4.5-mdh1.2.2)
+[INFO] |  +- org.apache.hbase:hbase-client:jar:0.98.11-mdh2.1.8:compile
+[INFO] |  |  +- com.xiaomi.owl:metric-client:jar:1.0.3:compile
+[INFO] |  |  |  +- (commons-httpclient:commons-httpclient:jar:3.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- com.alibaba:fastjson:jar:1.2.21:compile
+[INFO] |  |  +- org.apache.hbase:hbase-annotations:jar:0.98.11-mdh2.1.8:compile
+[INFO] |  |  |  +- jdk.tools:jdk.tools:jar:1.7:system
+[INFO] |  |  |  +- (com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (junit:junit:jar:4.11:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.hbase:hbase-common:jar:0.98.11-mdh2.1.8:compile
+[INFO] |  |  |  +- (org.apache.hbase:hbase-annotations:jar:0.98.11-mdh2.1.8:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.guava:guava:jar:13.0:compile - omitted for conflict with 18.0)
+[INFO] |  |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.7:compile - omitted for conflict with 1.4)
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.htrace:htrace-core:jar:3.1.1-mdh1.0-SNAPSHOT:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-common:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (junit:junit:jar:4.11:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.hbase:hbase-protocol:jar:0.98.11-mdh2.1.8:compile
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (junit:junit:jar:4.11:compile - omitted for duplicate)
+[INFO] |  |  +- (commons-codec:commons-codec:jar:1.7:compile - omitted for conflict with 1.4)
+[INFO] |  |  +- commons-io:commons-io:jar:2.4:compile
+[INFO] |  |  +- (commons-lang:commons-lang:jar:2.6:compile - omitted for duplicate)
+[INFO] |  |  +- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] |  |  +- (com.google.guava:guava:jar:13.0:compile - omitted for conflict with 18.0)
+[INFO] |  |  +- com.google.protobuf:protobuf-java:jar:2.5.0:compile
+[INFO] |  |  +- io.netty:netty-all:jar:4.1.4.Final:compile
+[INFO] |  |  +- org.apache.htrace:htrace-core:jar:3.1.1-mdh1.0-SNAPSHOT:compile
+[INFO] |  |  +- org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8:compile
+[INFO] |  |  |  \- org.codehaus.jackson:jackson-core-asl:jar:1.8.8:compile
+[INFO] |  |  +- org.jruby.jcodings:jcodings:jar:1.0.8:compile
+[INFO] |  |  +- org.jruby.joni:joni:jar:2.1.2:compile
+[INFO] |  |  |  \- (org.jruby.jcodings:jcodings:jar:1.0.8:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.hadoop:hadoop-auth:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.4:compile - omitted for duplicate)
+[INFO] |  |  |  \- org.apache.httpcomponents:httpclient:jar:4.2.5:compile
+[INFO] |  |  |     +- org.apache.httpcomponents:httpcore:jar:4.2.4:compile
+[INFO] |  |  |     +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |     \- (commons-codec:commons-codec:jar:1.6:compile - omitted for conflict with 1.4)
+[INFO] |  |  +- org.apache.hadoop:hadoop-common:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  +- org.apache.hadoop:hadoop-annotations:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  +- (com.google.guava:guava:jar:11.0.2:compile - omitted for conflict with 18.0)
+[INFO] |  |  |  +- commons-cli:commons-cli:jar:1.2:compile
+[INFO] |  |  |  +- org.apache.commons:commons-math3:jar:3.1.1:compile
+[INFO] |  |  |  +- xmlenc:xmlenc:jar:0.52:compile
+[INFO] |  |  |  +- (commons-httpclient:commons-httpclient:jar:3.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.4:compile - omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.4:compile - omitted for duplicate)
+[INFO] |  |  |  +- commons-net:commons-net:jar:3.1:compile
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- com.sun.jersey:jersey-core:jar:1.9:compile
+[INFO] |  |  |  +- com.sun.jersey:jersey-json:jar:1.9:compile
+[INFO] |  |  |  |  +- (org.codehaus.jettison:jettison:jar:1.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- com.sun.xml.bind:jaxb-impl:jar:2.2.3-1:compile
+[INFO] |  |  |  |  |  \- (javax.xml.bind:jaxb-api:jar:2.2.2:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  +- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-jaxrs:jar:1.8.3:compile
+[INFO] |  |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  |  \- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-xc:jar:1.8.3:compile
+[INFO] |  |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  |  \- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.3:compile - omitted for conflict with 1.8.8)
+[INFO] |  |  |  |  \- (com.sun.jersey:jersey-core:jar:1.9:compile - omitted for duplicate)
+[INFO] |  |  |  +- commons-el:commons-el:jar:1.0:runtime
+[INFO] |  |  |  |  \- (commons-logging:commons-logging:jar:1.0.3:runtime - omitted for conflict with 1.1.1)
+[INFO] |  |  |  +- (commons-logging:commons-logging:jar:1.1.3:compile - omitted for conflict with 1.1.1)
+[INFO] |  |  |  +- net.java.dev.jets3t:jets3t:jar:0.9.0:compile
+[INFO] |  |  |  |  +- (commons-codec:commons-codec:jar:1.4:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.httpcomponents:httpclient:jar:4.1.2:compile - omitted for conflict with 4.2.5)
+[INFO] |  |  |  |  +- (org.apache.httpcomponents:httpcore:jar:4.1.2:compile - omitted for conflict with 4.2.4)
+[INFO] |  |  |  |  \- com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[INFO] |  |  |  +- (commons-lang:commons-lang:jar:2.6:compile - omitted for duplicate)
+[INFO] |  |  |  +- commons-configuration:commons-configuration:jar:1.6:compile
+[INFO] |  |  |  |  +- (commons-collections:commons-collections:jar:3.2.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-lang:commons-lang:jar:2.4:compile - omitted for conflict with 2.6)
+[INFO] |  |  |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- commons-digester:commons-digester:jar:1.8:compile
+[INFO] |  |  |  |  |  +- commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[INFO] |  |  |  |  |  |  \- (commons-logging:commons-logging:jar:1.0.3:compile - omitted for conflict with 1.1.1)
+[INFO] |  |  |  |  |  \- (commons-logging:commons-logging:jar:1.1:compile - omitted for conflict with 1.1.1)
+[INFO] |  |  |  |  \- commons-beanutils:commons-beanutils-core:jar:1.8.0:compile
+[INFO] |  |  |  |     \- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.8.8:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8:compile - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.avro:avro:jar:1.7.4:compile
+[INFO] |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.8.8:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- com.thoughtworks.paranamer:paranamer:jar:2.3:compile
+[INFO] |  |  |  |  +- org.xerial.snappy:snappy-java:jar:1.0.4.1:compile
+[INFO] |  |  |  |  \- (org.apache.commons:commons-compress:jar:1.4.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-auth:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  +- com.jcraft:jsch:jar:0.1.42:compile
+[INFO] |  |  |  +- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] |  |  |  +- org.apache.commons:commons-compress:jar:1.4.1:compile
+[INFO] |  |  |  |  \- org.tukaani:xz:jar:1.0:compile
+[INFO] |  |  |  \- (com.xiaomi.common.perfcounter:xiaomi-common-perfcounter:jar:2.6.4:compile - omitted for conflict with 2.4.10)
+[INFO] |  |  +- org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  +- org.apache.hadoop:hadoop-yarn-common:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  |  +- org.apache.hadoop:hadoop-yarn-api:jar:2.4.0-mdh2.3.20:compile
+[INFO] |  |  |  |  |  +- (commons-lang:commons-lang:jar:2.6:compile - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (com.google.guava:guava:jar:11.0.2:compile - omitted for conflict with 18.0)
+[INFO] |  |  |  |  |  +- (commons-logging:commons-logging:jar:1.1.3:compile - omitted for conflict with 1.1.1)
+[INFO] |  |  |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- javax.xml.bind:jaxb-api:jar:2.2.2:compile
+[INFO] |  |  |  |  |  +- javax.xml.stream:stax-api:jar:1.0-2:compile
+[INFO] |  |  |  |  |  \- javax.activation:activation:jar:1.1:compile
+[INFO] |  |  |  |  +- (org.apache.commons:commons-compress:jar:1.4.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-lang:commons-lang:jar:2.6:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] |  |  |  |  +- (commons-codec:commons-codec:jar:1.4:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.sun.jersey:jersey-core:jar:1.9:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.google.guava:guava:jar:11.0.2:compile - omitted for conflict with 18.0)
+[INFO] |  |  |  |  +- (commons-logging:commons-logging:jar:1.1.3:compile - omitted for conflict with 1.1.1)
+[INFO] |  |  |  |  +- (commons-cli:commons-cli:jar:1.2:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.google.inject.extensions:guice-servlet:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-io:commons-io:jar:2.4:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- com.google.inject:guice:jar:3.0:compile
+[INFO] |  |  |  |  |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  |  |  |  |  \- (aopalliance:aopalliance:jar:1.0:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- com.sun.jersey:jersey-server:jar:1.9:compile
+[INFO] |  |  |  |  |  +- asm:asm:jar:3.1:compile
+[INFO] |  |  |  |  |  \- (com.sun.jersey:jersey-core:jar:1.9:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.sun.jersey:jersey-json:jar:1.9:compile - omitted for duplicate)
+[INFO] |  |  |  |  \- com.sun.jersey.contribs:jersey-guice:jar:1.9:compile
+[INFO] |  |  |  |     +- (javax.inject:javax.inject:jar:1:compile - omitted for duplicate)
+[INFO] |  |  |  |     +- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  |  |     +- (com.google.inject.extensions:guice-servlet:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  |  |     \- (com.sun.jersey:jersey-server:jar:1.9:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.avro:avro:jar:1.7.4:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:2.4.0-mdh2.3.20:compile - omitted for duplicate)
+[INFO] |  |  |  +- com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[INFO] |  |  |  |  \- (com.google.inject:guice:jar:3.0:compile - omitted for duplicate)
+[INFO] |  |  |  \- io.netty:netty:jar:3.6.2.Final:compile
+[INFO] |  |  +- com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1:compile
+[INFO] |  |  \- (junit:junit:jar:4.11:compile - omitted for duplicate)
+[INFO] |  +- org.apache.hbase:hbase-examples:jar:0.98.11-mdh2.1.8:compile
+[INFO] |  |  +- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  \- (com.github.stephenc.findbugs:findbugs-annotations:jar:1.3.9-1:compile - omitted for duplicate)
+[INFO] |  +- org.apache.thrift:thrift:jar:0.5.0:compile
+[INFO] |  +- com.xiaomi:xiaomi-thrift-scribe:jar:2.0.2:compile
+[INFO] |  +- (com.xiaomi:xiaomi-common-zookeeper:jar:1.0-SNAPSHOT:compile - omitted for conflict with 2.7.28)
+[INFO] |  +- com.xiaomi.common.perfcounter:xiaomi-common-perfcounter:jar:2.4.10:compile
+[INFO] |  |  +- (commons-httpclient:commons-httpclient:jar:3.1:compile - omitted for duplicate)
+[INFO] |  |  +- (commons-io:commons-io:jar:1.3.2:compile - omitted for conflict with 2.4)
+[INFO] |  |  +- (org.json:json:jar:20090211:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.1:compile - omitted for duplicate)
+[INFO] |  |  +- (com.xiaomi:xiaomi-common-utils:jar:2.4.2:compile - omitted for conflict with 2.7.28)
+[INFO] |  |  +- com.yammer.metrics:metrics-core:jar:2.2.0:compile
+[INFO] |  |  +- org.springframework:spring-core:jar:3.2.3.RELEASE:compile
+[INFO] |  |  |  \- (commons-logging:commons-logging:jar:1.1.1:compile - omitted for duplicate)
+[INFO] |  |  +- org.springframework:spring-context:jar:3.2.3.RELEASE:compile
+[INFO] |  |  |  +- (org.springframework:spring-aop:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  +- org.springframework:spring-beans:jar:3.2.3.RELEASE:compile
+[INFO] |  |  |  |  \- (org.springframework:spring-core:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  \- org.springframework:spring-expression:jar:3.2.3.RELEASE:compile
+[INFO] |  |  |     \- (org.springframework:spring-core:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- org.springframework:spring-aop:jar:3.2.3.RELEASE:compile
+[INFO] |  |  |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:3.2.3.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- org.aspectj:aspectjrt:jar:1.8.4:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.8.4:compile
+[INFO] |  +- (com.xiaomi:xiaomi-common-utils:jar:1.0-SNAPSHOT:compile - omitted for conflict with 2.7.28)
+[INFO] |  \- com.xiaomi:xiaomi-common-dal:jar:1.0-SNAPSHOT:compile
+[INFO] +- commons-codec:commons-codec:jar:1.10:compile
+[INFO] \- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.166 s
+[INFO] Finished at: 2018-01-11T17:14:10+08:00
+[INFO] Final Memory: 36M/752M
+[INFO] ------------------------------------------------------------------------
