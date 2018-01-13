@@ -7,6 +7,13 @@
       <configserver hostalias="node1" />
     </configservers>
   </admin>
+  <jdisc version="1.0">
+    <config name="search.config.qr-start">
+      <jdisc>
+        <export_packages>sun.security.krb5</export_packages>
+      </jdisc>
+    </config>
+  </jdisc>
   <container id="DuokanContainer" version="1.0">
     <document-api />
     <search>

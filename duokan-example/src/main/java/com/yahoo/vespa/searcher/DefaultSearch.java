@@ -22,8 +22,8 @@ import org.slf4j.LoggerFactory;
 public class DefaultSearch extends Searcher {
 
   private static Logger logger = LoggerFactory.getLogger(DefaultSearch.class);
-//  private static HbaseHandler hbaseHandler = HbaseHandler.getInstance(EnvironmentType.STAGING);
-  private static PegasusHandler pegasusHandler = PegasusHandler.getInstance(EnvironmentType.STAGING);
+  private static HbaseHandler hbaseHandler = HbaseHandler.getInstance(EnvironmentType.STAGING);
+//  private static PegasusHandler pegasusHandler = PegasusHandler.getInstance(EnvironmentType.STAGING);
 
   @Override
   public Result search(Query query, Execution execution) {
@@ -33,8 +33,8 @@ public class DefaultSearch extends Searcher {
       logger.info("userId is {}", userId);
       JSONObject userObject = new JSONObject();
       try{
-//        userObject = hbaseHandler.getUser(userId);
-        userObject = pegasusHandler.getDocument(userId);
+        userObject = hbaseHandler.getUser(userId);
+//        userObject = pegasusHandler.getDocument(userId);
         logger.info("hbase user document is {}", userObject.toString());
       } catch (Exception e) {
         logger.error("Error happend in search, ex:{}", ExceptionUtils.getFullStackTrace(e));
