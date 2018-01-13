@@ -1,0 +1,416 @@
+1515814478.492218	tj1-s-staging-rec06.kscn	32332/14640	configserver	runserver	event	starting/1 name="java -Xms128m -Xmx2048m -XX:+PreserveFramePointer -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/work/vespa/var/crash -XX:OnOutOfMemoryError=kill -9 %p -Djava.library.path=/home/work/vespa/lib64 -Djava.awt.headless=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.net.client.defaultConnectTimeout=5000 -Dsun.net.client.defaultReadTimeout=60000 -Djavax.net.ssl.keyStoreType=JKS -Djdisc.config.file=/home/work/vespa/var/jdisc_core/configserver.properties -Djdisc.export.packages= -Djdisc.cache.path=/home/work/vespa/var/vespa/bundlecache/configserver -Djdisc.debug.resources=false -Djdisc.bundle.path=/home/work/vespa/lib/jars -Djdisc.logger.enabled=true -Djdisc.logger.level=ALL -Djdisc.logger.tag=jdisc/configserver -Dfile.encoding=UTF-8 -Dzookeeperlogfile=/home/work/vespa/logs/vespa/zookeeper.configserver.log -cp /home/work/vespa/lib/jars/jdisc_core-jar-with-dependencies.jar com.yahoo.jdisc.core.StandaloneMain standalone-container-jar-with-dependencies.jar (pid 32333)"
+1515814479.46421	tj1-s-staging-rec06.kscn	32333	configserver	stdout	debug	Initializing application without privileges.
+1515814479.106	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.felix.framework	info	ServiceEvent REGISTERED
+1515814479.107	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.ApplicationLoader	debug	App location is not a class name. Installing bundle
+1515814479.107	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/standalone-container-jar-with-dependencies.jar'.
+1515814479.127	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	standalone-container	info	BundleEvent INSTALLED
+1515814479.128	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'configdefinitions-jar-with-dependencies.jar'.
+1515814479.129	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/configdefinitions-jar-with-dependencies.jar'.
+1515814479.131	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configdefinitions	info	BundleEvent INSTALLED
+1515814479.132	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'config-provisioning-jar-with-dependencies.jar'.
+1515814479.132	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/config-provisioning-jar-with-dependencies.jar'.
+1515814479.134	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-provisioning	info	BundleEvent INSTALLED
+1515814479.134	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'config-bundle-jar-with-dependencies.jar'.
+1515814479.134	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/config-bundle-jar-with-dependencies.jar'.
+1515814479.149	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-bundle	info	BundleEvent INSTALLED
+1515814479.149	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'config-model-api-jar-with-dependencies.jar'.
+1515814479.149	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/config-model-api-jar-with-dependencies.jar'.
+1515814479.151	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-api	info	BundleEvent INSTALLED
+1515814479.151	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'config-model-jar-with-dependencies.jar'.
+1515814479.151	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/config-model-jar-with-dependencies.jar'.
+1515814479.173	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model	info	BundleEvent INSTALLED
+1515814479.173	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'container-disc-jar-with-dependencies.jar'.
+1515814479.173	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/container-disc-jar-with-dependencies.jar'.
+1515814479.298	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-disc	info	BundleEvent INSTALLED
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'config-bundle-jar-with-dependencies.jar'.
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle from 'file:/home/work/vespa/lib/jars/config-bundle-jar-with-dependencies.jar' already installed.
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'configdefinitions-jar-with-dependencies.jar'.
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle from 'file:/home/work/vespa/lib/jars/configdefinitions-jar-with-dependencies.jar' already installed.
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'container-jersey2-jar-with-dependencies.jar'.
+1515814479.298	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/container-jersey2-jar-with-dependencies.jar'.
+1515814479.312	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-jersey2	info	BundleEvent INSTALLED
+1515814479.312	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'container-search-and-docproc-jar-with-dependencies.jar'.
+1515814479.313	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/container-search-and-docproc-jar-with-dependencies.jar'.
+1515814479.351	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-search-and-docproc	info	BundleEvent INSTALLED
+1515814479.351	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'docprocs-jar-with-dependencies.jar'.
+1515814479.351	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/docprocs-jar-with-dependencies.jar'.
+1515814479.355	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	docprocs	info	BundleEvent INSTALLED
+1515814479.355	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jdisc_http_service-jar-with-dependencies.jar'.
+1515814479.355	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jdisc_http_service-jar-with-dependencies.jar'.
+1515814479.365	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	jdisc_http_service	info	BundleEvent INSTALLED
+1515814479.365	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'asm-debug-all-5.0.3.jar'.
+1515814479.365	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/asm-debug-all-5.0.3.jar'.
+1515814479.370	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.objectweb.asm.all.debug	info	BundleEvent INSTALLED
+1515814479.370	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'javax.servlet-api-3.1.0.jar'.
+1515814479.370	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/javax.servlet-api-3.1.0.jar'.
+1515814479.371	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.servlet-api	info	BundleEvent INSTALLED
+1515814479.372	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-continuation-9.4.8.v20171121.jar'.
+1515814479.372	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-continuation-9.4.8.v20171121.jar'.
+1515814479.373	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.continuation	info	BundleEvent INSTALLED
+1515814479.373	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-http-9.4.8.v20171121.jar'.
+1515814479.373	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-http-9.4.8.v20171121.jar'.
+1515814479.376	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.http	info	BundleEvent INSTALLED
+1515814479.376	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-io-9.4.8.v20171121.jar'.
+1515814479.376	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-io-9.4.8.v20171121.jar'.
+1515814479.383	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.io	info	BundleEvent INSTALLED
+1515814479.383	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-jmx-9.4.8.v20171121.jar'.
+1515814479.383	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-jmx-9.4.8.v20171121.jar'.
+1515814479.384	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.jmx	info	BundleEvent INSTALLED
+1515814479.385	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-security-9.4.8.v20171121.jar'.
+1515814479.385	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-security-9.4.8.v20171121.jar'.
+1515814479.386	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.security	info	BundleEvent INSTALLED
+1515814479.386	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-server-9.4.8.v20171121.jar'.
+1515814479.386	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-server-9.4.8.v20171121.jar'.
+1515814479.389	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.server	info	BundleEvent INSTALLED
+1515814479.389	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-servlet-9.4.8.v20171121.jar'.
+1515814479.389	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-servlet-9.4.8.v20171121.jar'.
+1515814479.392	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlet	info	BundleEvent INSTALLED
+1515814479.392	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-servlets-9.4.8.v20171121.jar'.
+1515814479.392	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-servlets-9.4.8.v20171121.jar'.
+1515814479.394	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlets	info	BundleEvent INSTALLED
+1515814479.394	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'jetty-util-9.4.8.v20171121.jar'.
+1515814479.394	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jetty-util-9.4.8.v20171121.jar'.
+1515814479.399	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.util	info	BundleEvent INSTALLED
+1515814479.399	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'org.apache.aries.spifly.dynamic.bundle-1.0.8.jar'.
+1515814479.399	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/org.apache.aries.spifly.dynamic.bundle-1.0.8.jar'.
+1515814479.401	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.spifly.dynamic.bundle	info	BundleEvent INSTALLED
+1515814479.401	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'org.apache.aries.util-1.0.0.jar'.
+1515814479.401	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/org.apache.aries.util-1.0.0.jar'.
+1515814479.403	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.util	info	BundleEvent INSTALLED
+1515814479.403	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'jdisc_http_service' requires install from 'component-jar-with-dependencies.jar'.
+1515814479.403	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/component-jar-with-dependencies.jar'.
+1515814479.404	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	component	info	BundleEvent INSTALLED
+1515814479.404	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'vespaclient-container-plugin-jar-with-dependencies.jar'.
+1515814479.404	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/vespaclient-container-plugin-jar-with-dependencies.jar'.
+1515814479.416	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespaclient-container-plugin	info	BundleEvent INSTALLED
+1515814479.416	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'simplemetrics-jar-with-dependencies.jar'.
+1515814479.416	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/simplemetrics-jar-with-dependencies.jar'.
+1515814479.418	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	simplemetrics	info	BundleEvent INSTALLED
+1515814479.418	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'defaults-jar-with-dependencies.jar'.
+1515814479.418	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/defaults-jar-with-dependencies.jar'.
+1515814479.419	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	defaults	info	BundleEvent INSTALLED
+1515814479.419	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'component-jar-with-dependencies.jar'.
+1515814479.419	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle from 'file:/home/work/vespa/lib/jars/component-jar-with-dependencies.jar' already installed.
+1515814479.419	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'zkfacade-jar-with-dependencies.jar'.
+1515814479.419	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/zkfacade-jar-with-dependencies.jar'.
+1515814479.429	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	zkfacade	info	BundleEvent INSTALLED
+1515814479.429	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'aopalliance-repackaged-2.5.0-b05.jar'.
+1515814479.429	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/aopalliance-repackaged-2.5.0-b05.jar'.
+1515814479.431	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.external.aopalliance-repackaged	info	BundleEvent INSTALLED
+1515814479.431	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'hk2-api-2.5.0-b05.jar'.
+1515814479.431	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/hk2-api-2.5.0-b05.jar'.
+1515814479.432	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.api	info	BundleEvent INSTALLED
+1515814479.432	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'hk2-locator-2.5.0-b05.jar'.
+1515814479.433	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/hk2-locator-2.5.0-b05.jar'.
+1515814479.435	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.locator	info	BundleEvent INSTALLED
+1515814479.435	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'hk2-utils-2.5.0-b05.jar'.
+1515814479.435	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/hk2-utils-2.5.0-b05.jar'.
+1515814479.437	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.utils	info	BundleEvent INSTALLED
+1515814479.437	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-annotations-2.8.3.jar'.
+1515814479.437	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-annotations-2.8.3.jar'.
+1515814479.438	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-annotations	info	BundleEvent INSTALLED
+1515814479.438	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-core-2.8.3.jar'.
+1515814479.438	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-core-2.8.3.jar'.
+1515814479.441	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-core	info	BundleEvent INSTALLED
+1515814479.441	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-databind-2.8.3.jar'.
+1515814479.441	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-databind-2.8.3.jar'.
+1515814479.446	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-databind	info	BundleEvent INSTALLED
+1515814479.446	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-datatype-jdk8-2.8.3.jar'.
+1515814479.446	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-datatype-jdk8-2.8.3.jar'.
+1515814479.447	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jdk8	info	BundleEvent INSTALLED
+1515814479.447	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-datatype-jsr310-2.8.3.jar'.
+1515814479.447	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-datatype-jsr310-2.8.3.jar'.
+1515814479.449	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jsr310	info	BundleEvent INSTALLED
+1515814479.449	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-jaxrs-base-2.8.3.jar'.
+1515814479.449	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-jaxrs-base-2.8.3.jar'.
+1515814479.478	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base	info	BundleEvent INSTALLED
+1515814479.478	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-jaxrs-json-provider-2.8.3.jar'.
+1515814479.478	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-jaxrs-json-provider-2.8.3.jar'.
+1515814479.480	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider	info	BundleEvent INSTALLED
+1515814479.480	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jackson-module-jaxb-annotations-2.8.3.jar'.
+1515814479.480	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jackson-module-jaxb-annotations-2.8.3.jar'.
+1515814479.482	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.module.jackson-module-jaxb-annotations	info	BundleEvent INSTALLED
+1515814479.482	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'javassist-3.20.0-GA.jar'.
+1515814479.482	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/javassist-3.20.0-GA.jar'.
+1515814479.486	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javassist	info	BundleEvent INSTALLED
+1515814479.486	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'javax.ws.rs-api-2.0.1.jar'.
+1515814479.486	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/javax.ws.rs-api-2.0.1.jar'.
+1515814479.488	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.ws.rs-api	info	BundleEvent INSTALLED
+1515814479.488	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-client-2.23.2.jar'.
+1515814479.488	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-client-2.23.2.jar'.
+1515814479.490	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-client	info	BundleEvent INSTALLED
+1515814479.490	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-common-2.23.2.jar'.
+1515814479.490	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-common-2.23.2.jar'.
+1515814479.494	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-common	info	BundleEvent INSTALLED
+1515814479.494	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-container-servlet-2.23.2.jar'.
+1515814479.494	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-container-servlet-2.23.2.jar'.
+1515814479.495	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet	info	BundleEvent INSTALLED
+1515814479.495	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-container-servlet-core-2.23.2.jar'.
+1515814479.496	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-container-servlet-core-2.23.2.jar'.
+1515814479.497	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet-core	info	BundleEvent INSTALLED
+1515814479.497	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-entity-filtering-2.23.2.jar'.
+1515814479.497	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-entity-filtering-2.23.2.jar'.
+1515814479.499	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-entity-filtering	info	BundleEvent INSTALLED
+1515814479.499	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-guava-2.23.2.jar'.
+1515814479.499	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-guava-2.23.2.jar'.
+1515814479.503	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.bundles.repackaged.jersey-guava	info	BundleEvent INSTALLED
+1515814479.503	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-media-jaxb-2.23.2.jar'.
+1515814479.504	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-media-jaxb-2.23.2.jar'.
+1515814479.505	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-jaxb	info	BundleEvent INSTALLED
+1515814479.505	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-media-json-jackson-2.23.2.jar'.
+1515814479.505	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-media-json-jackson-2.23.2.jar'.
+1515814479.507	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-json-jackson	info	BundleEvent INSTALLED
+1515814479.507	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-media-multipart-2.23.2.jar'.
+1515814479.507	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-media-multipart-2.23.2.jar'.
+1515814479.509	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-multipart	info	BundleEvent INSTALLED
+1515814479.509	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'mimepull-1.9.6.jar'.
+1515814479.509	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/mimepull-1.9.6.jar'.
+1515814479.511	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.jvnet.mimepull	info	BundleEvent INSTALLED
+1515814479.511	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-server-2.23.2.jar'.
+1515814479.511	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-server-2.23.2.jar'.
+1515814479.515	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-server	info	BundleEvent INSTALLED
+1515814479.515	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'jersey-proxy-client-2.23.2.jar'.
+1515814479.516	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/jersey-proxy-client-2.23.2.jar'.
+1515814479.517	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-proxy-client	info	BundleEvent INSTALLED
+1515814479.517	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'osgi-resource-locator-1.0.1.jar'.
+1515814479.517	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/osgi-resource-locator-1.0.1.jar'.
+1515814479.519	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.osgi-resource-locator	info	BundleEvent INSTALLED
+1515814479.519	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'container-disc' requires install from 'validation-api-1.1.0.Final.jar'.
+1515814479.519	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/validation-api-1.1.0.Final.jar'.
+1515814479.520	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.validation.api	info	BundleEvent INSTALLED
+1515814479.520	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	OSGi bundle 'standalone-container' requires install from 'vespajlib.jar'.
+1515814479.520	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	debug	Installing OSGi bundle from 'file:/home/work/vespa/lib/jars/vespajlib.jar'.
+1515814479.524	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespajlib	info	BundleEvent INSTALLED
+1515814479.524	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.yahoo.jdisc.core.FelixFramework	info	OSGi bundle 'standalone-container' states that it requires privileged initialization, but privileges are not available. YMMV.
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.security	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.jmx	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.servlet-api	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	simplemetrics	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	jdisc_http_service	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-search-and-docproc	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.spifly.dynamic.bundle	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.server	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-provisioning	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-bundle	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlet	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.io	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-disc	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	standalone-container	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.objectweb.asm.all.debug	info	BundleEvent RESOLVED
+1515814479.569	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-core	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.util	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-api	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.http	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.util	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	component	info	BundleEvent RESOLVED
+1515814479.570	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configdefinitions	info	BundleEvent RESOLVED
+1515814480.019	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Module execution: 19ms
+1515814480.021	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	TypeListeners creation: 2ms
+1515814480.035	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Scopes creation: 14ms
+1515814480.035	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Converters creation: 0ms
+1515814480.039	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Binding creation: 4ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Private environment creation: 1ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Injector construction: 0ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Binding initialization: 0ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Binding indexing: 0ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Collecting injection requests: 0ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Binding validation: 0ms
+1515814480.040	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Static validation: 0ms
+1515814480.041	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Instance member validation: 1ms
+1515814480.042	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Provider verification: 1ms
+1515814480.042	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Static member injection: 0ms
+1515814480.042	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Instance injection: 0ms
+1515814480.044	tj1-s-staging-rec06.kscn	32333/1	jdisc/configserver	/com.google.inject.internal.util.$Stopwatch	debug	Preloading singletons: 2ms
+1515814480.146	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.jdisc.ConfiguredApplication	info	Starting container
+1515814480.521	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.config.model.application.provider.FilesApplicationPackage	info	Adding user include dir 'config-models'
+1515814481.035	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.config.model.application.provider.FilesApplicationPackage	info	Adding user include dir 'config-models'
+1515814481.868	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	standalone-container	info	ServiceEvent REGISTERED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	standalone-container	info	BundleEvent STARTED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configdefinitions	info	BundleEvent STARTED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-provisioning	info	BundleEvent STARTED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-bundle	info	BundleEvent STARTED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-api	info	BundleEvent STARTED
+1515814481.869	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model	info	BundleEvent STARTED
+1515814481.871	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-disc	info	ServiceEvent REGISTERED
+1515814481.871	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-disc	info	BundleEvent STARTED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-server	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-annotations	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.validation.api	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.external.aopalliance-repackaged	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javassist	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.locator	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.utils	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.ws.rs-api	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.module.jackson-module-jaxb-annotations	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-common	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-jersey2	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jdk8	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.osgi-resource-locator	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.bundles.repackaged.jersey-guava	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-databind	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-multipart	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.api	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jsr310	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.jvnet.mimepull	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet-core	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-client	info	BundleEvent RESOLVED
+1515814481.885	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-jersey2	info	BundleEvent STARTED
+1515814481.886	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	container-search-and-docproc	info	BundleEvent STARTED
+1515814481.888	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	docprocs	info	BundleEvent RESOLVED
+1515814481.888	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	docprocs	info	BundleEvent STARTED
+1515814481.889	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	jdisc_http_service	info	BundleEvent STARTED
+1515814481.889	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.objectweb.asm.all.debug	info	BundleEvent STARTED
+1515814481.889	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.servlet-api	info	BundleEvent STARTED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.continuation	info	BundleEvent RESOLVED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.continuation	info	BundleEvent STARTED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.http	info	BundleEvent STARTED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.io	info	BundleEvent STARTED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.jmx	info	BundleEvent STARTED
+1515814481.890	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.security	info	BundleEvent STARTED
+1515814481.891	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.server	info	BundleEvent STARTED
+1515814481.891	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlet	info	BundleEvent STARTED
+1515814481.892	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlets	info	BundleEvent RESOLVED
+1515814481.892	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.servlets	info	BundleEvent STARTED
+1515814481.892	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.util	info	BundleEvent STARTED
+1515814481.896	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.spifly.dynamic.bundle	info	ServiceEvent REGISTERED
+1515814481.905	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.eclipse.jetty.http	info	ServiceEvent REGISTERED
+1515814481.909	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.spifly.dynamic.bundle	info	BundleEvent STARTED
+1515814481.909	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.aries.util	info	BundleEvent STARTED
+1515814481.909	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	component	info	BundleEvent STARTED
+1515814481.912	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespaclient-container-plugin	info	BundleEvent RESOLVED
+1515814481.912	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespaclient-container-plugin	info	BundleEvent STARTED
+1515814481.912	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	simplemetrics	info	BundleEvent STARTED
+1515814481.913	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	defaults	info	BundleEvent RESOLVED
+1515814481.913	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	defaults	info	BundleEvent STARTED
+1515814481.915	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	zkfacade	info	BundleEvent RESOLVED
+1515814481.915	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	zkfacade	info	BundleEvent STARTED
+1515814481.915	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.external.aopalliance-repackaged	info	BundleEvent STARTED
+1515814481.916	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.api	info	BundleEvent STARTED
+1515814481.916	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.locator	info	BundleEvent STARTED
+1515814481.916	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.utils	info	BundleEvent STARTED
+1515814481.916	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-annotations	info	BundleEvent STARTED
+1515814481.917	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-core	info	BundleEvent STARTED
+1515814481.917	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.core.jackson-databind	info	BundleEvent STARTED
+1515814481.917	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jdk8	info	BundleEvent STARTED
+1515814481.917	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.datatype.jackson-datatype-jsr310	info	BundleEvent STARTED
+1515814481.918	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base	info	BundleEvent STARTED
+1515814481.918	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider	info	BundleEvent STARTED
+1515814481.918	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	com.fasterxml.jackson.module.jackson-module-jaxb-annotations	info	BundleEvent STARTED
+1515814481.918	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javassist	info	BundleEvent STARTED
+1515814481.919	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.ws.rs-api	info	BundleEvent STARTED
+1515814481.919	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-client	info	BundleEvent STARTED
+1515814481.919	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-common	info	BundleEvent STARTED
+1515814481.921	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet	info	BundleEvent RESOLVED
+1515814481.921	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet	info	BundleEvent STARTED
+1515814481.921	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.containers.jersey-container-servlet-core	info	BundleEvent STARTED
+1515814481.923	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-entity-filtering	info	BundleEvent RESOLVED
+1515814481.923	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-entity-filtering	info	BundleEvent STARTED
+1515814481.923	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.bundles.repackaged.jersey-guava	info	BundleEvent STARTED
+1515814481.925	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-jaxb	info	BundleEvent RESOLVED
+1515814481.925	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-jaxb	info	BundleEvent STARTED
+1515814481.927	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-json-jackson	info	BundleEvent RESOLVED
+1515814481.927	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-json-jackson	info	BundleEvent STARTED
+1515814481.927	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.media.jersey-media-multipart	info	BundleEvent STARTED
+1515814481.927	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.jvnet.mimepull	info	BundleEvent STARTED
+1515814481.928	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.core.jersey-server	info	BundleEvent STARTED
+1515814481.929	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-proxy-client	info	BundleEvent RESOLVED
+1515814481.929	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.jersey.ext.jersey-proxy-client	info	BundleEvent STARTED
+1515814481.952	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.glassfish.hk2.osgi-resource-locator	info	BundleEvent STARTED
+1515814481.955	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	javax.validation.api	info	BundleEvent STARTED
+1515814481.955	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespajlib	info	BundleEvent RESOLVED
+1515814481.955	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	vespajlib	info	BundleEvent STARTED
+1515814481.968	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.config.model.application.provider.FilesApplicationPackage	info	Adding user include dir 'config-models'
+1515814482.321	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.config.model.application.provider.FilesApplicationPackage	info	Adding user include dir 'config-models'
+1515814482.604	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.HandlersConfigurerDi	info	Installing bundles from the latest application
+1515814482.605	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/configserver.jar'
+1515814482.615	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/config-model-fat.jar'
+1515814482.615	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configserver	info	BundleEvent INSTALLED
+1515814482.796	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/orchestrator.jar'
+1515814482.796	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-fat	info	BundleEvent INSTALLED
+1515814482.802	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/node-repository.jar'
+1515814482.802	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	orchestrator	info	BundleEvent INSTALLED
+1515814482.808	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/application-model.jar'
+1515814482.808	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	node-repository	info	BundleEvent INSTALLED
+1515814482.810	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/service-monitor.jar'
+1515814482.810	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	application-model	info	BundleEvent INSTALLED
+1515814482.811	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installing bundle with reference 'LocalFileDb:components/zkfacade.jar'
+1515814482.811	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	service-monitor	info	BundleEvent INSTALLED
+1515814482.815	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configserver	info	BundleEvent RESOLVED
+1515814482.815	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	configserver	info	BundleEvent STARTED
+1515814482.816	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-fat	info	BundleEvent RESOLVED
+1515814482.816	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	config-model-fat	info	BundleEvent STARTED
+1515814482.818	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	orchestrator	info	BundleEvent RESOLVED
+1515814482.818	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	application-model	info	BundleEvent RESOLVED
+1515814482.818	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	service-monitor	info	BundleEvent RESOLVED
+1515814482.818	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	orchestrator	info	BundleEvent STARTED
+1515814482.822	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	node-repository	info	BundleEvent RESOLVED
+1515814482.822	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	node-repository	info	BundleEvent STARTED
+1515814482.822	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	application-model	info	BundleEvent STARTED
+1515814482.822	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	service-monitor	info	BundleEvent STARTED
+1515814482.822	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	0 bundles were removed, and 7 bundles were installed.
+1515814482.822	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.core.config.BundleLoader	info	Installed bundles: {[0]org.apache.felix.framework, [1]standalone-container, [2]configdefinitions, [3]config-provisioning, [4]config-bundle, [5]config-model-api, [6]config-model, [7]container-disc, [8]container-jersey2, [9]container-search-and-docproc, [10]docprocs, [11]jdisc_http_service, [12]org.objectweb.asm.all.debug, [13]javax.servlet-api, [14]org.eclipse.jetty.continuation, [15]org.eclipse.jetty.http, [16]org.eclipse.jetty.io, [17]org.eclipse.jetty.jmx, [18]org.eclipse.jetty.security, [19]org.eclipse.jetty.server, [20]org.eclipse.jetty.servlet, [21]org.eclipse.jetty.servlets, [22]org.eclipse.jetty.util, [23]org.apache.aries.spifly.dynamic.bundle, [24]org.apache.aries.util, [25]component, [26]vespaclient-container-plugin, [27]simplemetrics, [28]defaults, [29]zkfacade, [30]org.glassfish.hk2.external.aopalliance-repackaged, [31]org.glassfish.hk2.api, [32]org.glassfish.hk2.locator, [33]org.glassfish.hk2.utils, [34]com.fasterxml.jackson.core.jackson-annotations, [35]com.fasterxml.jackson.core.jackson-core, [36]com.fasterxml.jackson.core.jackson-databind, [37]com.fasterxml.jackson.datatype.jackson-datatype-jdk8, [38]com.fasterxml.jackson.datatype.jackson-datatype-jsr310, [39]com.fasterxml.jackson.jaxrs.jackson-jaxrs-base, [40]com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider, [41]com.fasterxml.jackson.module.jackson-module-jaxb-annotations, [42]javassist, [43]javax.ws.rs-api, [44]org.glassfish.jersey.core.jersey-client, [45]org.glassfish.jersey.core.jersey-common, [46]org.glassfish.jersey.containers.jersey-container-servlet, [47]org.glassfish.jersey.containers.jersey-container-servlet-core, [48]org.glassfish.jersey.ext.jersey-entity-filtering, [49]org.glassfish.jersey.bundles.repackaged.jersey-guava, [50]org.glassfish.jersey.media.jersey-media-jaxb, [51]org.glassfish.jersey.media.jersey-media-json-jackson, [52]org.glassfish.jersey.media.jersey-media-multipart, [53]org.jvnet.mimepull, [54]org.glassfish.jersey.core.jersey-server, [55]org.glassfish.jersey.ext.jersey-proxy-client, [56]org.glassfish.hk2.osgi-resource-locator, [57]javax.validation.api, [58]vespajlib, [59]configserver, [60]config-model-fat, [61]orchestrator, [62]node-repository, [63]application-model, [64]service-monitor}
+1515814482.823	tj1-s-staging-rec06.kscn	32333	jdisc/configserver	org.apache.felix.framework	info	FrameworkEvent PACKAGES REFRESHED
+1515814483.969051	tj1-s-staging-rec06.kscn	32333	configserver	stderr	warning	SLF4J: The following loggers will not work because they were created
+1515814483.969084	tj1-s-staging-rec06.kscn	32333	configserver	stderr	warning	SLF4J: during the default configuration phase of the underlying logging system.
+1515814483.969090	tj1-s-staging-rec06.kscn	32333	configserver	stderr	warning	SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+1515814483.969115	tj1-s-staging-rec06.kscn	32333	configserver	stderr	warning	SLF4J: org.apache.zookeeper.server.quorum.QuorumPeerMain
+1515814485.341	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.metrics.simple.MetricManager	config	setting up simple metrics gathering. reportPeriodSeconds=60, pointsToKeepPerMetric=100
+1515814485.393	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.vespa.config.server.zookeeper.ConfigCurator	config	Using jute max buffer size 52428800
+1515814485.397	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.requests value=0
+1515814485.397	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.failedRequests value=0
+1515814485.397	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=procTime value=0
+1515814485.414	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.config.model.application.provider.FilesApplicationPackage	info	Adding user include dir 'config-models'
+1515814485.586	tj1-s-staging-rec06.kscn	32333/54	configserver	Container.com.yahoo.vespa.config.server.zookeeper.ConfigCurator	config	Using jute max buffer size 10485760
+1515814485.623	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.internal.ServiceFinder	config	Running in an OSGi environment
+1515814485.717	tj1-s-staging-rec06.kscn	32333/174	configserver	Container.com.yahoo.container.jdisc.state.StateMonitor	info	Changing health status code from 'initializing' to 'up'
+1515814485.719	tj1-s-staging-rec06.kscn	32333/174	configserver	Container.com.yahoo.vespa.config.server.rpc.RpcServer	info	Rpc server listening on port 19070
+1515814485.943	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.eclipse.jetty.util.log	info	Logging initialized @7447ms to org.eclipse.jetty.util.log.Slf4jLog
+1515814486.542	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.jdisc.http.server.jetty.JettyHttpServer	info	Creating janitor executor with 16 threads
+1515814486.632	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.eclipse.jetty.server.Server	info	jetty-9.4.8.v20171121, build timestamp: 2017-11-22T05:27:37+08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+1515814486.819	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Initiating Jersey application, version Jersey: 2.23.2 2016-08-08 17:14:55...
+1515814487.036	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultManagedAsyncExecutorProvider] to be used for injection of executor qualified by [org.glassfish.jersey.server.ManagedAsyncExecutor] annotation.
+1515814487.037	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ScheduledExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultBackgroundSchedulerProvider] to be used for injection of scheduler qualified by [org.glassfish.jersey.server.BackgroundScheduler] annotation.
+1515814487.079	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Jersey application initialized.\nRoot Resource Classes:\n  com.yahoo.vespa.config.server.restapi.impl.StatusResource\nGlobal Reader Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\nGlobal Writer Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\n   org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor\nMessage Body Readers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\nMessage Body Writers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartWriter\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\n
+1515814487.091	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Initiating Jersey application, version Jersey: 2.23.2 2016-08-08 17:14:55...
+1515814487.199	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultManagedAsyncExecutorProvider] to be used for injection of executor qualified by [org.glassfish.jersey.server.ManagedAsyncExecutor] annotation.
+1515814487.200	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ScheduledExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultBackgroundSchedulerProvider] to be used for injection of scheduler qualified by [org.glassfish.jersey.server.BackgroundScheduler] annotation.
+1515814487.220	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Jersey application initialized.\nRoot Resource Classes:\n  com.yahoo.vespa.orchestrator.resources.InstanceResource\n  com.yahoo.vespa.orchestrator.resources.ApplicationSuspensionResource\n  com.yahoo.vespa.orchestrator.resources.HostResource\n  com.yahoo.vespa.orchestrator.resources.HostSuspensionResource\nGlobal Reader Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\nGlobal Writer Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\n   org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor\nMessage Body Readers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\nMessage Body Writers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartWriter\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\n
+1515814487.220	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.internal.Errors	config	The following hints have been detected: HINT: A HTTP GET method, public void com.yahoo.vespa.orchestrator.resources.ApplicationSuspensionResource.getApplication(java.lang.String), returns a void type. It can be intentional and perfectly fine, but it is a little uncommon that GET method returns always "204 No Content".\n
+1515814487.227	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Initiating Jersey application, version Jersey: 2.23.2 2016-08-08 17:14:55...
+1515814487.260	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultManagedAsyncExecutorProvider] to be used for injection of executor qualified by [org.glassfish.jersey.server.ManagedAsyncExecutor] annotation.
+1515814487.260	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ScheduledExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultBackgroundSchedulerProvider] to be used for injection of scheduler qualified by [org.glassfish.jersey.server.BackgroundScheduler] annotation.
+1515814487.264	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Jersey application initialized.\n\nGlobal Reader Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\nGlobal Writer Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\n   org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor\nMessage Body Readers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\nMessage Body Writers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartWriter\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\n
+1515814487.270	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Initiating Jersey application, version Jersey: 2.23.2 2016-08-08 17:14:55...
+1515814487.313	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultManagedAsyncExecutorProvider] to be used for injection of executor qualified by [org.glassfish.jersey.server.ManagedAsyncExecutor] annotation.
+1515814487.314	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.process.internal.ExecutorProviders	config	Selected ScheduledExecutorServiceProvider implementation [org.glassfish.jersey.server.internal.process.ServerProcessingBinder$DefaultBackgroundSchedulerProvider] to be used for injection of scheduler qualified by [org.glassfish.jersey.server.BackgroundScheduler] annotation.
+1515814487.322	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.glassfish.jersey.server.ApplicationHandler	config	Jersey application initialized.\nRoot Resource Classes:\n  com.yahoo.vespa.serviceview.StateResource\nGlobal Reader Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\nGlobal Writer Interceptors:\n   org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor\n   org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor\nMessage Body Readers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\nMessage Body Writers:\n   org.glassfish.jersey.media.multipart.internal.MultiPartWriter\n   com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider\n
+1515814487.323	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.eclipse.jetty.server.handler.ContextHandler	info	Started o.e.j.s.ServletContextHandler@70736b19{/,null,AVAILABLE}
+1515814487.323	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.jdisc.http.server.jetty.JDiscServerConnector	info	Using channel set by activator: sun.nio.ch.ServerSocketChannelImpl[/0.0.0.0:19071]
+1515814487.339	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.eclipse.jetty.server.AbstractConnector	info	Started configserver@54c1878b{HTTP/1.1,[http/1.1]}{0.0.0.0:19071}
+1515814487.341	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.org.eclipse.jetty.server.Server	info	Started @8845ms
+1515814487.342	tj1-s-staging-rec06.kscn	32333/1	configserver	Container.com.yahoo.container.jdisc.ConfiguredApplication	info	Switching to the latest deployed set of configurations and components. Application switch number: 0
+1515814500.000	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.requests value=0
+1515814500.001	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.failedRequests value=0
+1515814500.002	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=procTime value=0
+1515814519.593202	tj1-s-staging-rec06.kscn	518/17146	configproxy	runserver	event	starting/1 name="java -Xms32M -Xmx256M -XX:ThreadStackSize=256 -XX:MaxJavaStackTraceDepth=-1 -XX:OnOutOfMemoryError=kill -9 %p -Dproxyconfigsources=tcp/localhost:19070 -cp libexec/vespa/patches/configproxy:lib/jars/config-proxy-jar-with-dependencies.jar com.yahoo.vespa.config.proxy.ProxyServer 19090 (pid 520)"
+1515814519.947	tj1-s-staging-rec06.kscn	520/1	configproxy	configproxy.com.yahoo.vespa.config.proxy.ProxyServer	event	started/1 name=configproxy
+1515814520.143697	tj1-s-staging-rec06.kscn	618/61074	config-sentinel	runserver	event	starting/1 name="sbin/vespa-config-sentinel -c hosts/tj1-s-staging-rec06.kscn (pid 619)"
+1515814520.159253	tj1-s-staging-rec06.kscn	619/4910	config-sentinel	config-sentinel	event	started/1 name="config-sentinel"
+1515814520.255	tj1-s-staging-rec06.kscn	520/28	configproxy	configproxy.com.yahoo.config.subscription.impl.JRTConfigRequester	warning	Request callback failed: APPLICATION_NOT_LOADED. Connection spec: tcp/localhost:19070, error message: Failed request (No application exists) from Connection { Socket[addr=/127.0.0.1,port=39609,localport=19070] }
+1515814536.081	tj1-s-staging-rec06.kscn	520/37	configproxy	configproxy.com.yahoo.vespa.config.proxy.DelayedResponseHandler	warning	Timed out (timeout 15000) getting config name=sentinel,namespace=cloud.config,configId=hosts/tj1-s-staging-rec06.kscn, will retry
+1515814538.292	tj1-s-staging-rec06.kscn	32333/171	configserver	Container.com.yahoo.vespa.defaults.Defaults	info	VESPA_WEB_SERVICE_PORT not set, using 8080
+1515814539.144	tj1-s-staging-rec06.kscn	32333/171	configserver	Container.com.yahoo.vespa.config.server.http.HttpErrorResponse	info	Returning response with response code 400, error-code:INVALID_APPLICATION_PACKAGE, message=Invalid application package: default.default: Error loading model: container2 cannot reserve port 8080 on host 'tj1-s-staging-rec06.kscn': Already reserved for container. You must set port explicitly for all instances of this service type, except the first one. Next available port is: 19105 ports used: {8080=container on host 'tj1-s-staging-rec06.kscn', 19100=container on host 'tj1-s-staging-rec06.kscn', 19101=container on host 'tj1-s-staging-rec06.kscn', 19102=container on host 'tj1-s-staging-rec06.kscn', 19103=container on host 'tj1-s-staging-rec06.kscn', 19104=container on host 'tj1-s-staging-rec06.kscn'}
+1515814540.175049	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconnection	warning	Connection to tcp/localhost:19090 failed or timed out
+1515814540.175227	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconnection	warning	FRT Connection tcp/localhost:19090 suspended until 2018-01-13 03:35:50 GMT
+1515814540.175268	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconfigagent	info	Error response or no response from config server (key: name=sentinel,namespace=cloud.config,configId=hosts/tj1-s-staging-rec06.kscn) (errcode=103, validresponse:0), trying again in 6000 milliseconds
+1515814560.000	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=procTime value=0
+1515814560.000	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.requests value=0
+1515814560.000	tj1-s-staging-rec06.kscn	32333/45	configserver	Container.com.yahoo.statistics.Counter	event	count/1 name=configserver.failedRequests value=0
+1515814564.239	tj1-s-staging-rec06.kscn	520/22	configproxy	configproxy.com.yahoo.vespa.config.proxy.RpcConfigSourceClient	info	Subscribe for 'name=sentinel,namespace=cloud.config,configId=hosts/tj1-s-staging-rec06.kscn,0944a8c189a502c0e2fe1930114897b7' failed, closing subscriber
+1515814576.190087	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconnection	warning	Connection to tcp/localhost:19090 failed or timed out
+1515814576.190156	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconnection	warning	FRT Connection tcp/localhost:19090 suspended until 2018-01-13 03:36:36 GMT
+1515814576.190179	tj1-s-staging-rec06.kscn	619/32879	config-sentinel	config-sentinel.config.frt.frtconfigagent	info	Error response or no response from config server (key: name=sentinel,namespace=cloud.config,configId=hosts/tj1-s-staging-rec06.kscn) (errcode=103, validresponse:0), trying again in 7000 milliseconds
+1515814588.509	tj1-s-staging-rec06.kscn	520/28	configproxy	configproxy.com.yahoo.config.subscription.impl.JRTConfigRequester	warning	Request callback failed: APPLICATION_NOT_LOADED. Connection spec: tcp/localhost:19070, error message: Failed request (No application exists) from Connection { Socket[addr=/127.0.0.1,port=39609,localport=19070] }
