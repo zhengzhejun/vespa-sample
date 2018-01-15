@@ -141,6 +141,9 @@
         <artifactId>bundle-plugin</artifactId>
         <version>${vespa_version}</version>
         <extensions>true</extensions>
+        <configuration>
+          <Import-Package>sun.security.krb5</Import-Package>
+        </configuration>
       </plugin>
     </plugins>
   </build>
