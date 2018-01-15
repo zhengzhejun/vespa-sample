@@ -4,52 +4,53 @@
   <admin version="2.0">
     <adminserver hostalias="node1"/>
     <configservers>
-      <configserver hostalias="node1" />
+      <configserver hostalias="node1"/>
     </configservers>
   </admin>
-  <jdisc version="1.0">
+  <!--<jdisc version="1.0">-->
+  <!--</jdisc>-->
+  <container id="DuokanContainer" version="1.0">
     <config name="search.config.qr-start">
       <jdisc>
         <export_packages>sun.security.krb5</export_packages>
       </jdisc>
     </config>
-  </jdisc>
-  <container id="DuokanContainer" version="1.0">
-    <document-api />
+    <document-api/>
     <search>
       <chain id="item" inherits="vespa">
-        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch" />
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch"/>
       </chain>
-      <chain id="default" inherits="vespa" >
-        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DefaultSearch" />
+      <chain id="default" inherits="vespa">
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DefaultSearch"/>
       </chain>
       <chain id="recommend" inherits="vespa">
-        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.UserTensorSearch" />
-        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch" />
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.UserTensorSearch"/>
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.ItemTensorSearch"/>
       </chain>
       <chain id="duokanItem" inherits="vespa">
-        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DuokanItemSearch" />
+        <searcher bundle="duokanexample" id="com.yahoo.vespa.searcher.DuokanItemSearch"/>
       </chain>
     </search>
-    <handler bundle="duokanexample" id="com.yahoo.vespa.handler.DemoHandler" >
+    <handler bundle="duokanexample" id="com.yahoo.vespa.handler.DemoHandler">
       <binding>http://*:8080/demo/</binding>
     </handler>
-    <nodes jvmargs="-Djava.security.krb5.conf=/etc/krb5-hadoop.conf -Dhadoop.property.hadoop.security.authentication=kerberos -Dhadoop.property.hadoop.client.keytab.file=/etc/h_sns.keytab -Dhadoop.property.hadoop.client.kerberos.principal=h_sns@XIAOMI.HADOOP">
+    <nodes
+      jvmargs="-Djava.security.krb5.conf=/etc/krb5-hadoop.conf -Dhadoop.property.hadoop.security.authentication=kerberos -Dhadoop.property.hadoop.client.keytab.file=/etc/h_sns.keytab -Dhadoop.property.hadoop.client.kerberos.principal=h_sns@XIAOMI.HADOOP">
       <node hostalias="node1"/>
-      <node hostalias="node2" />
+      <node hostalias="node2"/>
     </nodes>
   </container>
 
   <content id="duokan" version="1.0">
     <redundancy>1</redundancy>
     <documents>
-      <document type="user" mode="index" />
-      <document type="item" mode="index" />
-      <document type="tag" mode="index" />
+      <document type="user" mode="index"/>
+      <document type="item" mode="index"/>
+      <document type="tag" mode="index"/>
     </documents>
     <nodes>
-      <node hostalias="node1" distribution-key="0" />
-      <node hostalias="node2" distribution-key="1" />
+      <node hostalias="node1" distribution-key="0"/>
+      <node hostalias="node2" distribution-key="1"/>
     </nodes>
   </content>
 
